@@ -82,4 +82,10 @@
     }
   }
   load(); setInterval(load, 10 * 60 * 1000);
+
+  // ---- easter egg ----
+  const box = $("eggbox"), img = $("eggimg");
+  $("egg").addEventListener("click", () => { if (!img.src) img.src = "chats.jpg"; box.hidden = false; });
+  box.addEventListener("click", () => { box.hidden = true; });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") box.hidden = true; });
 })();

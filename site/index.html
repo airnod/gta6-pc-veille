@@ -50,6 +50,12 @@
   details .body{padding:0 16px 14px}
   .empty{color:var(--mute);text-align:center;padding:26px}
   footer{margin-top:34px;color:var(--mute);font-size:12px;text-align:center}
+  .egg{display:block;margin:14px auto 0;background:none;border:0;cursor:pointer;font-size:13px;opacity:.12;filter:grayscale(1);transition:opacity .3s}
+  .egg:hover,.egg:focus-visible{opacity:.8;filter:none}
+  .eggbox{position:fixed;inset:0;z-index:50;background:rgba(5,4,10,.88);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:18px;cursor:zoom-out}
+  .eggbox[hidden]{display:none}
+  .eggbox img{max-width:min(1100px,100%);max-height:85vh;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  .eggclose{color:var(--mute);font-size:12px;font-family:"JetBrains Mono",monospace}
   @media (max-width:520px){.count{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -58,7 +64,7 @@
   <header>
     <div class="kicker">Veille automatique · mise à jour régulière</div>
     <h1>GTA VI sur PC : où on en est</h1>
-    <div class="sub">Compte à rebours de 3 mois depuis la sortie console (19/11/2026). Portage officiel, streaming, émulation PS5 (AnyPS5, KytyPS5, SharpEmu…).</div>
+    <div class="sub">Compte à rebours de 3 mois depuis la sortie console (19/11/2026). Portage, Émulation ou Sortie Officielle.</div>
     <div class="count" id="count">
       <div class="unit"><b id="d">--</b><span>jours</span></div>
       <div class="unit"><b id="h">--</b><span>heures</span></div>
@@ -79,7 +85,14 @@
     <div id="history"></div>
   </section>
 
-  <footer>Rapports rédigés automatiquement par Claude à partir de sources publiques. Aucun lien de téléchargement non officiel.</footer>
+  <footer>Rapports rédigés automatiquement par Claude à partir de sources publiques. Aucun lien de téléchargement non officiel.
+    <button id="egg" class="egg" type="button" aria-label="Surprise">🐾</button>
+  </footer>
+</div>
+
+<div id="eggbox" class="eggbox" hidden>
+  <img id="eggimg" alt="Deux chats devant GTA VI sur PC">
+  <span class="eggclose">Clique n'importe où pour fermer</span>
 </div>
 
 <script src="app.js" defer></script>
