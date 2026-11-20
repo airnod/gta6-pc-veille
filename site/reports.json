@@ -1,6 +1,66 @@
 {
- "maj": "2026-11-20T10:00:00Z",
+ "maj": "2026-11-20T12:41:55Z",
  "reports": [
+  {
+   "date": "2026-11-20T12:41:55Z",
+   "titre": "J+1 : toujours aucune version PC, Remote Play seule option",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur. Netzwelt confirme que Rockstar bloque Xbox Cloud Gaming sur PC ; AnyPS5 affiche 44,65 % des fonctions système implémentées.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Aucune annonce de Rockstar/Take-Two : ni page Steam/Epic, ni config requise. Take-Two répète que les plateformes ne sortent pas toujours en même temps."
+    },
+    {
+     "categorie": "Rumeurs / fuites",
+     "statut": "non",
+     "texte": "La rumeur GamesBeat d'octobre 2026 (PC au T1 2027) reste la plus citée ; d'autres médias évoquent le printemps 2027, voire 2028. Rien de confirmé."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Remote Play PS5 et Xbox confirmé par Rockstar, sans surcoût, avec sa propre console. Xbox Cloud Gaming limité aux consoles Xbox : bloqué sur PC, mobile et tablette."
+    },
+    {
+     "categorie": "AnyPS5",
+     "statut": "non",
+     "texte": "17 670 fonctions système sur 39 572 implémentées (44,65 %) ; 1484/1560 formes d'instructions gfx1013 et 1460/1460 RDNA2 traduites, sans garantie d'exécution correcte. Aucun lien avec GTA VI pour l'instant."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "Quelques jeux légers démarrent ou sont jouables ; KytyPS5 atteint les menus et des passages de GTA V PS5 (jusqu'à 60 FPS). Aucun test réel de GTA VI signalé."
+    },
+    {
+     "categorie": "Autres pistes",
+     "statut": "non",
+     "texte": "Aucune émulation Xbox Series exploitable ni service cloud tiers (GeForce Now) proposant GTA VI sur PC."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Netzwelt – GTA 6 jouable sur PC dès le 19/11 ?",
+     "url": "https://www.netzwelt.de/news/260521-gta-6-open-world-blockbuster-ab-19-november-pc-spielbar.html"
+    },
+    {
+     "titre": "AnyPS5 – page de progression",
+     "url": "https://boykopovar.github.io/AnyPS5/progress.html"
+    },
+    {
+     "titre": "Dexerto – Xbox Cloud et Remote Play",
+     "url": "https://www.dexerto.com/gta/gta-6-confirms-xbox-cloud-gaming-support-but-pc-players-face-a-catch-3427015/"
+    },
+    {
+     "titre": "God is a Geek – rumeur PC début 2027",
+     "url": "https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"
+    },
+    {
+     "titre": "Allthings.how – état de SharpEmu et KytyPS5",
+     "url": "https://allthings.how/ps5-emulation-in-what-sharpemu-and-kytyps5-can-run-now/"
+    }
+   ]
+  },
   {
    "date": "2026-11-20T10:00:00Z",
    "titre": "J+1 : sorti sur consoles, toujours rien sur PC",
