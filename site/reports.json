@@ -1,0 +1,56 @@
+{
+ "maj": "2026-11-20T10:00:00Z",
+ "reports": [
+  {
+   "date": "2026-11-20T10:00:00Z",
+   "titre": "J+1 : sorti sur consoles, toujours rien sur PC",
+   "statut": "partiel",
+   "resume": "GTA VI est sorti le 19/11 sur PS5 et Xbox Series uniquement. Aucune version PC annoncée. Le seul moyen officiel d'y jouer sur un écran de PC : le Remote Play depuis sa propre console.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Rien d'annoncé par Rockstar/Take-Two : pas de page Steam, pas de config requise. Rumeur GamesBeat (oct. 2026) : sortie PC au T1 2027, non confirmée."
+    },
+    {
+     "categorie": "Remote Play",
+     "statut": "ok",
+     "texte": "Remote Play complet confirmé sur PlayStation et Xbox : jouable sur PC via PS Remote Play ou l'app Xbox, avec la console et le jeu."
+    },
+    {
+     "categorie": "Xbox Cloud Gaming",
+     "statut": "non",
+     "texte": "Disponible sur consoles Xbox seulement ; pas de streaming cloud vers PC au lancement."
+    },
+    {
+     "categorie": "AnyPS5 (relinker natif)",
+     "statut": "non",
+     "texte": "100 % des instructions shader suivies traduites, ~49 % des fonctions système (fin oct.). Aucun jeu complet lancé."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "Une dizaine de jeux légers jouables, gros jeux 3D instables. GTA VI hors de portée pour l'instant."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GTA Side – pas de version PC",
+     "url": "https://gtaside.com/games/gta6/pc/"
+    },
+    {
+     "titre": "Dexerto – Remote Play / Cloud",
+     "url": "https://www.dexerto.com/gta/gta-6-confirms-xbox-cloud-gaming-support-but-pc-players-face-a-catch-3427015/"
+    },
+    {
+     "titre": "Dot Esports – rumeur T1 2027",
+     "url": "https://dotesports.com/gta/news/gta-6-pc-release-q1-2027-report"
+    },
+    {
+     "titre": "Tech Insider – progrès AnyPS5",
+     "url": "https://tech-insider.org/anyps5-100-percent-shader-coverage-ps5-emulator-2026/"
+    }
+   ]
+  }
+ ]
+}

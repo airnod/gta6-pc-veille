@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI sur PC — Veille & compte à rebours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0a14; --panel:#15121f; --line:#2a2438; --txt:#ece8f4; --mute:#9a92ad;
+    --pink:#ff4fa3; --orange:#ff9a3c; --teal:#2fe0c8; --ok:#46d38a; --warn:#ffc547; --ko:#ff5d6c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.5}
+  a{color:var(--teal)}
+  .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+  header{position:relative;border-radius:18px;overflow:hidden;padding:34px 26px 28px;
+    background:linear-gradient(160deg,#2b0f3a 0%,#4a1240 38%,#a8325e 70%,#ff8a3d 100%)}
+  header::after{content:"";position:absolute;inset:auto 0 0 0;height:46%;
+    background:repeating-linear-gradient(0deg,rgba(12,10,20,.0) 0 10px,rgba(12,10,20,.35) 10px 12px);pointer-events:none}
+  .kicker{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+  h1{margin:6px 0 4px;font-size:clamp(26px,5vw,42px);line-height:1.1}
+  .sub{opacity:.9;max-width:620px}
+  .count{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+  .unit{background:rgba(12,10,20,.55);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 6px;text-align:center}
+  .unit b{display:block;font-family:"JetBrains Mono",monospace;font-size:clamp(26px,6vw,46px);font-weight:600}
+  .unit span{font-size:12px;text-transform:uppercase;letter-spacing:.12em;opacity:.8}
+  .bar{position:relative;z-index:1;margin-top:16px;height:8px;border-radius:99px;background:rgba(12,10,20,.5);overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),#fff)}
+  .barlbl{position:relative;z-index:1;display:flex;justify-content:space-between;font-size:12px;margin-top:6px;opacity:.85;font-family:"JetBrains Mono",monospace}
+  section{margin-top:26px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin:0 0 10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .verdict{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .pill{font-family:"JetBrains Mono",monospace;font-size:12px;padding:4px 10px;border-radius:99px;border:1px solid currentColor}
+  .p-ok{color:var(--ok)} .p-warn{color:var(--warn)} .p-ko{color:var(--ko)}
+  .meta{color:var(--mute);font-size:13px;font-family:"JetBrains Mono",monospace}
+  .resume{font-size:17px;margin:10px 0 4px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:14px}
+  .pt{border:1px solid var(--line);border-radius:10px;padding:12px;background:#110e19}
+  .pt h3{margin:0 0 6px;font-size:14px;display:flex;justify-content:space-between;gap:8px}
+  .pt p{margin:0;font-size:14px;color:#d6d0e2}
+  .src{margin-top:14px;font-size:13px}
+  .src a{display:inline-block;margin:2px 10px 2px 0}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
+  summary{cursor:pointer;padding:12px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  details .body{padding:0 16px 14px}
+  .empty{color:var(--mute);text-align:center;padding:26px}
+  footer{margin-top:34px;color:var(--mute);font-size:12px;text-align:center}
+  @media (max-width:520px){.count{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Veille automatique · mise à jour régulière</div>
+    <h1>GTA VI sur PC : où on en est</h1>
+    <div class="sub">Compte à rebours de 3 mois depuis la sortie console (19/11/2026). Portage officiel, streaming, émulation PS5 (AnyPS5, KytyPS5, SharpEmu…).</div>
+    <div class="count" id="count">
+      <div class="unit"><b id="d">--</b><span>jours</span></div>
+      <div class="unit"><b id="h">--</b><span>heures</span></div>
+      <div class="unit"><b id="m">--</b><span>min</span></div>
+      <div class="unit"><b id="s">--</b><span>sec</span></div>
+    </div>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="barlbl"><span>19/11/2026</span><span id="pct">0 %</span><span>19/02/2027</span></div>
+  </header>
+
+  <section>
+    <h2>Dernier rapport</h2>
+    <div id="latest" class="card"><div class="empty">Chargement…</div></div>
+  </section>
+
+  <section>
+    <h2>Historique</h2>
+    <div id="history"></div>
+  </section>
+
+  <footer>Rapports rédigés automatiquement par Claude à partir de sources publiques. Aucun lien de téléchargement non officiel.</footer>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
