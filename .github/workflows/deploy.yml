@@ -1,5 +1,5 @@
 # Publie le dossier site/ sur GitHub Pages à chaque modification.
-# Aucun secret nécessaire.
+# Aucun secret nécessaire. Site : https://airnod.github.io/gta6-pc-veille/
 name: Deploy site
 
 on:
