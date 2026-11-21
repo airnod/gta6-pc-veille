@@ -1,6 +1,66 @@
 {
- "maj": "2026-11-21T06:41:53Z",
+ "maj": "2026-11-21T12:42:18Z",
  "reports": [
+  {
+   "date": "2026-11-21T12:42:18Z",
+   "titre": "J+2 : la « page Steam » GTA VI jugée suspecte, toujours rien d'officiel sur PC",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur. PCGamesN et Softonic mettent en garde contre la page Steam « GTA 6 » repérée le 20/11 : elle n'est pas présentée comme officielle et Rockstar n'a rien annoncé.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Toujours ni date PC, ni config requise, ni précommande de la part de Rockstar ou Take-Two, deux jours après la sortie console du 19/11. La page Steam signalée le 20/11 est jugée suspecte par PCGamesN, qui conseille de ne pas s'y fier."
+    },
+    {
+     "categorie": "Rumeurs / fuites",
+     "statut": "non",
+     "texte": "Pas de nouvelle fuite crédible. Les estimations restent un portage début 2027 (GamesBeat) ou vers 2028 (PC Gamer), et Take-Two répète ne pas toujours sortir sur toutes les plateformes en même temps."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Sur PC, seul le Remote Play depuis sa propre PS5 ou Xbox Series permet de jouer. Xbox Cloud Gaming propose GTA VI sur consoles et mobiles mais pas sur PC ; le jeu reste absent de GeForce Now."
+    },
+    {
+     "categorie": "AnyPS5",
+     "statut": "non",
+     "texte": "Page de progression toujours inaccessible pour la veille. HotHardware fait état de 100 % des 1 166 instructions de shader GPU couvertes et de 84,69 % des 3 044 fonctions système recensées (chiffres non datés, autre méthode de comptage que le 44,65 % relevé le 19/11). Aucun signe de GTA VI lancé via AnyPS5."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "KytyPS5 fait tourner des passages de GTA V PS5 jusqu'à 60 FPS et quelques jeux 3D, au prix d'un matériel puissant ; SharpEmu reste sur des titres 2D ou des écrans de démarrage. Aucun test réel de GTA VI publié."
+    },
+    {
+     "categorie": "Autres pistes",
+     "statut": "non",
+     "texte": "Pas d'émulation Xbox Series exploitable ni de service cloud tiers proposant GTA VI sur PC."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PCGamesN – La page Steam « GTA 6 » est suspecte",
+     "url": "https://www.pcgamesn.com/grand-theft-auto-vi/steam-page-suspicious"
+    },
+    {
+     "titre": "Softonic – GTA 6 apparaît sur Steam, mais pas d'emballement",
+     "url": "https://en.softonic.com/articles/gta-6-has-appeared-on-steam-but-dont-get-excited-yet"
+    },
+    {
+     "titre": "HotHardware – AnyPS5 atteint 100 % de couverture des shaders GPU",
+     "url": "https://hothardware.com/news/anyps5-hits-100-gpu-shader-coverage-for-playing-ps5-games-on-pc"
+    },
+    {
+     "titre": "Dexerto – Xbox Cloud Gaming, mais pas sur PC",
+     "url": "https://www.dexerto.com/gta/gta-6-confirms-xbox-cloud-gaming-support-but-pc-players-face-a-catch-3427015/"
+    },
+    {
+     "titre": "GamingOnSteam – GTA 6 qui snobe le PC, une occasion manquée (21/11)",
+     "url": "https://gamingonsteam.com/2026/11/21/steam-machine-news-gta-6-skipping-pc"
+    }
+   ]
+  },
   {
    "date": "2026-11-21T06:41:53Z",
    "titre": "J+2 : une page Steam GTA VI signalée, mais rien d'officiel côté PC",
