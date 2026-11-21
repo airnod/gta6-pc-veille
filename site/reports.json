@@ -1,6 +1,70 @@
 {
- "maj": "2026-11-21T12:42:18Z",
+ "maj": "2026-11-21T18:42:00Z",
  "reports": [
+  {
+   "date": "2026-11-21T18:42:00Z",
+   "titre": "J+2 soir : toujours aucune annonce PC, ventes record côté consoles",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur. GTA VI aurait généré environ 1,84 milliard de dollars dès le jour de sortie (estimation relayée par Fox 5), sans qu'aucune version PC ne soit annoncée.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Toujours ni date, ni config requise, ni page Steam/Epic/Rockstar Launcher confirmée par Rockstar ou Take-Two au 21/11 au soir. PC Gamer rappelle qu'aucune date PC n'a été annoncée."
+    },
+    {
+     "categorie": "Rumeurs / fuites",
+     "statut": "non",
+     "texte": "Aucune fuite crédible nouvelle (Schreier, Henderson, GamesBeat) sur le portage. Les estimations restent un PC début 2027 (GamesBeat) ou vers 2028 (PC Gamer) ; Zelnick reste évasif sur le portage « inévitable »."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Seul le Remote Play depuis sa propre PS5 ou Xbox Series permet de jouer sur PC. Xbox Cloud Gaming couvre consoles et mobiles mais pas le PC, et GTA VI reste absent de GeForce Now."
+    },
+    {
+     "categorie": "AnyPS5",
+     "statut": "non",
+     "texte": "Page de progression encore inaccessible pour la veille. PBX Science confirme qu'aucune version publique n'existe et que le développeur ne publiera rien tant qu'un jeu ne démarre pas entièrement ; aucun test de GTA VI."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "KytyPS5 fait tourner plusieurs jeux 3D et des passages de GTA V PS5 jusqu'à 60 FPS avant plantage ; SharpEmu reste surtout sur des titres 2D. Aucun test réel de GTA VI publié."
+    },
+    {
+     "categorie": "Autres pistes",
+     "statut": "non",
+     "texte": "Pas d'émulation Xbox Series exploitable ni de service cloud tiers légal proposant GTA VI sur PC."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PC Gamer – Pas de date de sortie PC pour GTA 6",
+     "url": "https://www.pcgamer.com/no-gta-6-pc-release-announced"
+    },
+    {
+     "titre": "Fox 5 – GTA VI : environ 1,84 Md$ estimés dès le jour de sortie",
+     "url": "https://www.fox5dc.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record"
+    },
+    {
+     "titre": "Dexerto – Xbox Cloud Gaming, mais pas sur PC",
+     "url": "https://www.dexerto.com/gta/gta-6-confirms-xbox-cloud-gaming-support-but-pc-players-face-a-catch-3427015/"
+    },
+    {
+     "titre": "PBX Science – AnyPS5, encore aux débuts",
+     "url": "https://pbxscience.com/anyps5-aims-to-run-ps5-games-natively-on-pc-but-it-is-still-early-days/"
+    },
+    {
+     "titre": "Tom's Hardware – Plusieurs jeux 3D jouables sur KytyPS5",
+     "url": "https://www.tomshardware.com/video-games/playstation/ps5-emulation-hits-new-milestone-in-record-time-multiple-3d-games-now-playable-in-kyty-performance-and-support-steadily-improving-with-30-fps-gameplay-possible-today"
+    },
+    {
+     "titre": "Wccftech – Zelnick reste évasif sur le portage PC",
+     "url": "https://wccftech.com/gta-6-november-19-date-holds-take-two-beats-earnings-zelnick-pc-port/"
+    }
+   ]
+  },
   {
    "date": "2026-11-21T12:42:18Z",
    "titre": "J+2 : la « page Steam » GTA VI jugée suspecte, toujours rien d'officiel sur PC",
