@@ -1,6 +1,66 @@
 {
- "maj": "2026-11-22T12:41:49Z",
+ "maj": "2026-11-22T18:19:34Z",
  "reports": [
+  {
+   "date": "2026-11-22T18:19:34Z",
+   "titre": "J+3 soir : toujours pas de PC officiel, AnyPS5 à 45 % des fonctions système",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur pour GTA VI sur PC. Petit détail récent : la page de progression d'AnyPS5 (régénérée le 22/11) affiche 17 828 fonctions système sur 39 253 implémentées (45,42 %), sans aucun jeu listé ni test de GTA VI.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 22/11 au soir, aucune date, config requise ni page Steam/Epic/Rockstar Launcher. PC Gamer rappelle qu'aucune version PC n'est annoncée par Rockstar."
+    },
+    {
+     "categorie": "Rumeurs / fuites",
+     "statut": "non",
+     "texte": "Rien de neuf chez Schreier, Henderson ou GamesBeat. Take-Two (Zelnick) répète que toutes les plateformes ne sortent pas en même temps ; les estimations de la presse vont du printemps 2027 à 2028."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Jouable sur PC uniquement via Remote Play depuis sa propre PS5 ou Xbox Series, sans surcoût. Xbox Cloud Gaming propose GTA VI mais reste fermé au PC selon Microsoft ; GTA VI absent de GeForce Now."
+    },
+    {
+     "categorie": "AnyPS5",
+     "statut": "non",
+     "texte": "Page de progression du 22/11 : 45,42 % des fonctions des bibliothèques système (17 828/39 253), libc à 100 %, libkernel à 94 %, toutes les formes d'instructions RDNA2 décodées (1 460/1 460). Aucune compatibilité de jeu publiée, GTA VI non mentionné."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "KytyPS5 démarre entièrement Dead Cells et Blasphemous 2 et atteint les menus de GTA V PS5 ; SharpEmu va jusqu'à la création de personnage de Demon's Souls avant de planter. Aucun test réel de GTA VI publié."
+    },
+    {
+     "categorie": "Autres pistes",
+     "statut": "non",
+     "texte": "Pas d'émulation Xbox Series exploitable ni de service cloud tiers légal proposant GTA VI sur PC."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "AnyPS5 – Page de progression",
+     "url": "https://boykopovar.github.io/AnyPS5/progress.html"
+    },
+    {
+     "titre": "PC Gamer – Pas de date de sortie PC pour GTA 6",
+     "url": "https://www.pcgamer.com/no-gta-6-pc-release-announced"
+    },
+    {
+     "titre": "Netzwelt – GTA 6 jouable sur PC via Remote Play dès le 19 novembre",
+     "url": "https://www.netzwelt.de/news/260521-gta-6-open-world-blockbuster-ab-19-november-pc-spielbar.html"
+    },
+    {
+     "titre": "PC Games – Xbox Cloud Gaming : Microsoft ferme la porte au PC pour GTA 6",
+     "url": "https://www.pcgames.de/GTA-6-Spiel-55239/News/Xbox-Cloud-Gaming-PC-Streaming-Absage-1555987/"
+    },
+    {
+     "titre": "All Things How – Ce que SharpEmu et KytyPS5 font tourner",
+     "url": "https://allthings.how/ps5-emulation-in-what-sharpemu-and-kytyps5-can-run-now/"
+    }
+   ]
+  },
   {
    "date": "2026-11-22T12:41:49Z",
    "titre": "J+3 midi : pas de PC officiel, AnyPS5 annoncerait 5 jeux PS5 jouables",
