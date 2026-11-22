@@ -1,6 +1,66 @@
 {
- "maj": "2026-11-21T18:42:00Z",
+ "maj": "2026-11-22T06:42:01Z",
  "reports": [
+  {
+   "date": "2026-11-22T06:42:01Z",
+   "titre": "J+3 matin : toujours pas de version PC, Remote Play seule option",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur. Rockstar et Take-Two n'ont toujours rien annoncé pour le PC ; AnyPS5 revendique 100 % des 1 166 instructions shader GPU de la PS5 couvertes, sans jeu complet qui démarre.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 22/11 au matin, aucune date, config requise ni page Steam/Epic/Rockstar Launcher n'a été confirmée. PC Gamer et Windows Central rappellent qu'aucune version PC n'est annoncée."
+    },
+    {
+     "categorie": "Rumeurs / fuites",
+     "statut": "non",
+     "texte": "Rien de neuf chez Schreier, Henderson ou GamesBeat. Les estimations vont toujours d'un PC en 2027 à vers 2028 ; Zelnick répète que la console reste le « cœur » du public sans exclure le portage."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Seul le Remote Play depuis sa propre PS5 ou Xbox Series permet de jouer sur PC. Xbox Cloud Gaming couvre consoles et mobiles mais Microsoft exclut le PC ; GTA VI absent de GeForce Now."
+    },
+    {
+     "categorie": "AnyPS5",
+     "statut": "non",
+     "texte": "HotHardware rapporte 100 % des 1 166 instructions shader GPU couvertes et 2 578 fonctions système sur 3 044 découvertes (84,69 %). Aucune version publique ni test de GTA VI ; page de progression inaccessible pour la veille."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "KytyPS5 fait tourner des passages de GTA V PS5 jusqu'à 60 FPS et plusieurs jeux 3D, mais demande un PC puissant ; SharpEmu reste surtout sur des titres 2D. Aucun test réel de GTA VI publié."
+    },
+    {
+     "categorie": "Autres pistes",
+     "statut": "non",
+     "texte": "Pas d'émulation Xbox Series exploitable ni de service cloud tiers légal proposant GTA VI sur PC."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PC Gamer – Pas de date de sortie PC pour GTA 6",
+     "url": "https://www.pcgamer.com/no-gta-6-pc-release-announced"
+    },
+    {
+     "titre": "PC Games – Xbox Cloud Gaming : Microsoft exclut le PC",
+     "url": "https://www.pcgames.de/GTA-6-Spiel-55239/News/Xbox-Cloud-Gaming-PC-Streaming-Absage-1555987/"
+    },
+    {
+     "titre": "HotHardware – AnyPS5 atteint 100 % de couverture des shaders GPU",
+     "url": "https://hothardware.com/news/anyps5-hits-100-gpu-shader-coverage-for-playing-ps5-games-on-pc"
+    },
+    {
+     "titre": "PCGH – Émulateurs PS5 : la course à GTA 6 sur PC",
+     "url": "https://www.pcgameshardware.de/Playstation-5-Konsolen-265878/News/PS5-Emulator-SharpEmu-Dreaming-Sarah-GTA-6-1548009/"
+    },
+    {
+     "titre": "TechRadar – Zelnick : la console d'abord, le PC ensuite",
+     "url": "https://www.techradar.com/gaming/take-two-ceo-says-gta-6-isnt-coming-to-pc-day-one-because-console-players-are-the-core-consumer-but-the-real-reason-is-obvious"
+    }
+   ]
+  },
   {
    "date": "2026-11-21T18:42:00Z",
    "titre": "J+2 soir : toujours aucune annonce PC, ventes record côté consoles",
