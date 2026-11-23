@@ -1,6 +1,70 @@
 {
- "maj": "2026-11-23T12:42:19Z",
+ "maj": "2026-11-23T18:41:59Z",
  "reports": [
+  {
+   "date": "2026-11-23T18:41:59Z",
+   "titre": "J+4 soir : toujours pas de GTA VI sur PC, rien de neuf côté émulation",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur depuis ce midi. Les articles les plus récents (Hollywood Life, 18/11) ne font que rappeler qu'aucune date PC n'est annoncée.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 23/11 à 18 h 40 UTC, ni Rockstar ni Take-Two n'ont annoncé de date, de config requise ou de page Steam/Epic/Rockstar Launcher. La fausse fiche « GTA 6 » repérée sur Steam reste à ignorer."
+    },
+    {
+     "categorie": "Rumeurs / fuites",
+     "statut": "non",
+     "texte": "Aucune nouvelle info de Schreier, Henderson ou GamesBeat. La piste « PC début 2027 » relayée en octobre reste non confirmée ; d'autres estimations visent 2028."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Seule solution sur PC : le Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming reste fermé au PC pour GTA VI et le jeu n'est pas sur GeForce Now."
+    },
+    {
+     "categorie": "AnyPS5",
+     "statut": "non",
+     "texte": "Page de progression non lue ce soir (accès refusé) ; derniers chiffres connus du 22/11 : 17 828/39 253 fonctions système (45,42 %) et 100 % des 1 166 instructions shader GPU. Pas de version publique, GTA VI non testé."
+    },
+    {
+     "categorie": "Émulateurs PS5 (KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "Rien de nouveau : KytyPS5 affiche toujours les menus de GTA V PS5 jusqu'à 60 i/s et quelques jeux 3D vers 30 i/s, SharpEmu avance sur Demon's Souls. Aucun test réel de GTA VI."
+    },
+    {
+     "categorie": "Autres pistes",
+     "statut": "non",
+     "texte": "Pas d'émulateur Xbox Series exploitable ni de service cloud tiers légal proposant GTA VI sur PC."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Hollywood Life – Quand GTA 6 arrivera-t-il sur PC ?",
+     "url": "https://hollywoodlife.com/2026/11/18/when-will-gta-6-come-to-pc/"
+    },
+    {
+     "titre": "PC Gamer – Pas de date de sortie PC pour GTA 6",
+     "url": "https://www.pcgamer.com/no-gta-6-pc-release-announced"
+    },
+    {
+     "titre": "God is a Geek – GTA 6 PC viserait début 2027",
+     "url": "https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"
+    },
+    {
+     "titre": "PC Games – Xbox Cloud Gaming : Microsoft ferme la porte au PC pour GTA 6",
+     "url": "https://www.pcgames.de/GTA-6-Spiel-55239/News/Xbox-Cloud-Gaming-PC-Streaming-Absage-1555987/"
+    },
+    {
+     "titre": "HotHardware – AnyPS5 atteint 100 % de couverture des shaders GPU",
+     "url": "https://hothardware.com/news/anyps5-hits-100-gpu-shader-coverage-for-playing-ps5-games-on-pc"
+    },
+    {
+     "titre": "Digital Citizen – KyTyPS5 fait tourner des parties de GTA V jusqu'à 60 i/s",
+     "url": "https://www.digitalcitizen.life/kytyps5-emulator-runs-parts-of-gta-v-at-up-to-60-fps-as-ps5-emulation-advances/"
+    }
+   ]
+  },
   {
    "date": "2026-11-23T12:42:19Z",
    "titre": "J+4 midi : pas de PC officiel, attention à une fausse fiche GTA 6 sur Steam",
