@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-24T08:41:50Z",
+ "maj": "2026-11-24T12:41:58Z",
  "reports": [
+  {
+   "date": "2026-11-24T12:41:58Z",
+   "titre": "J+5 midi : CGBJ entre « en jeu » dans GTA VI sur PC, monde sans éclairage et très lent",
+   "statut": "partiel",
+   "resume": "PortWatch (24/11) dit avoir vérifié que CGBJ, groupe privé bâti sur VIctory et XCL, atteint le jeu : on marche, parle aux PNJ et ouvre le menu, mais très lentement et sans éclairage. C'est le premier projet à franchir le palier « En jeu » ; rien n'est encore jouable.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 24/11 à 12 h 40 UTC, toujours aucune date, config ni page Steam/Epic de Rockstar ou Take-Two. Rien de neuf chez Schreier, Henderson ou GamesBeat."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "CGBJ mène à 72 % (palier « En jeu », score PortWatch du 24/11, vérification par PortWatch seul). Suivent, d'après le relevé PortWatch de 7 h 34 UTC : VIctory 67 % (en jeu partiel 0,8) et XCL 62,5 % (en jeu partiel 0,5), puis Xbox2Windows 47,5 %."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "La vidéo de 77 s attribuée à CGBJ (X, 24/11) montre l'intro en couleurs plates : voiture, rue, gardien, cour de prison ; une partie à pied a fini sur écran noir, sans chiffres d'i/s publiés. TuxBox affiche sa première image (40 %) ; code CGBJ privé, non reproductible."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf trouvé au 24/11 : SharpEmu revendique six jeux à 60 i/s, KytyPS5 reste aux menus de GTA V, AnyPS5 sans version publique. GTA VI n'a été testé sur aucun."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "La build Xbox fuitée reste non authentifiée et Rockstar se tait ; Leonida, supprimé le 23/11, est exclu du classement, aucun avis DMCA public contre XCL ou CGBJ. Toute offre de « GTA VI PC » prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Exclusif : CGBJ entre en jeu dans un monde sans éclairage",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-cgbj-in-game"
+    },
+    {
+     "titre": "PortWatch VI – TuxBox affiche la première image, VIctory approche du monde",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-tuxbox-first-frame-victory-world"
+    },
+    {
+     "titre": "Pro-Gamer – VIctory et TuxBox : premier rendu 3D de GTA 6 sur PC",
+     "url": "https://pro-gamer.gg/gta-6-pc-victory-marvisak-tuxbox-first-mission-3d-rendering-rx-6700-xt/"
+    },
+    {
+     "titre": "VideoCardz – Un projet GTA 6 PC atteindrait le rendu en jeu",
+     "url": "https://videocardz.com/newz/gta-6-pc-project-reportedly-reaches-in-game-rendering"
+    }
+   ]
+  },
   {
    "date": "2026-11-24T08:41:50Z",
    "titre": "J+5 matin : VIctory passe à 30 i/s aux menus, XCL et VIctory toujours bloqués avant le gameplay",
