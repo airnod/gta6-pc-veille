@@ -52,6 +52,10 @@ for i, e in enumerate(eff):
     if not isinstance(g.get("fps", 0), (int, float)) or not 0 <= g.get("fps", 0) <= 240:
         fail(f"{w}.gta.fps invalide")
     text(str(g.get("stability", "unknown")), f"{w}.gta.stability", 30)
+    if "note" in e:
+        text(e["note"], f"{w}.note", 40)
+    if e.get("verification", "self-reported") not in ("self-reported", "verified", "unverified"):
+        fail(f"{w}.verification invalide")
     if not isinstance(e.get("stars", 0), int) or e.get("stars", 0) < 0:
         fail(f"{w}.stars invalide")
 print(f"OK : {len(eff)} projet(s) valides")

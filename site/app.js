@@ -89,15 +89,16 @@
   const APPROCHES = { "Compatibility layer": "Couche de compatibilité", "Compatibility runtime": "Runtime de compatibilité",
     "HLE emulator": "Émulateur HLE", "Emulator": "Émulateur", "Static recompilation": "Recompilation statique",
     "Static recompilation (DX12)": "Recompilation statique (DX12)", "Relinker": "Relinker", "Relinker (PS5 route)": "Relinker (version PS5)",
-    "Relinker + shader recompiler": "Relinker + recompilation des shaders", "API bridge": "Pont d'API", "Research probes": "Recherches" };
+    "Relinker + shader recompiler": "Relinker + recompilation des shaders", "Fork of XCL": "Dérivé de XCL", "Boot harness": "Banc de démarrage", "Unknown": "Méthode non publiée", "API bridge": "Pont d'API", "Research probes": "Recherches" };
   const num = (v) => { const n = Number(v); return Number.isFinite(n) ? Math.min(1, Math.max(0, n)) : 0; };
   function score(e){
     const g = e.groundwork || {}, t = e.gta || {};
-    const gw = (num(g.loader) + num(g.shaders) + num(g.graphics) + num(g.proven)) / 4 * 25;
+    // un projet qui démarre vraiment GTA VI a forcément terminé son travail préparatoire
+    const gw = num(t.boots) > 0 ? 25 : (num(g.loader) + num(g.shaders) + num(g.graphics) + num(g.proven)) / 4 * 25;
     const ms = (num(t.loads) + num(t.boots) + num(t.menu) + num(t.ingame)) * 11.25;
     const fps = num((Number(t.fps) || 0) / 30) * 15;
     const st = (STAB[String(t.stability || "").toLowerCase()] || 0) * 15;
-    return Math.round((gw + ms + (num(t.ingame) > 0 ? fps + st : 0)) * 10) / 10;
+    return Math.round((gw + ms + (fps + st) * num(t.ingame)) * 10) / 10;
   }
   const JALONS = [["loads", "Charge"], ["boots", "Démarre"], ["menu", "Menu"], ["ingame", "En jeu"]];
   function bestMilestone(list){
@@ -117,6 +118,8 @@
       const left = el("div"); const nm = el("div", "nm", e.name || "?");
       if (e.gtaSpecific) nm.append(el("span", "tag", "GTA VI"));
       if (e.verification === "self-reported") nm.append(el("span", "tag", "auto-déclaré"));
+      if (e.verification === "unverified") nm.append(el("span", "tag", "non vérifié"));
+      if (e.note) nm.append(el("span", "tag", e.note));
       left.append(nm, el("div", "sub2", (APPROCHES[e.approach] || e.approach || "") + " · " + (e.gtaSpecific ? "GTA VI" : "tout jeu Xbox Series") + " · ★ " + (e.stars || 0).toLocaleString("fr-FR")));
       const bars = el("div", "bars"); const pb = el("div", "pbar"); const fill = el("i"); fill.style.width = e._s + "%"; pb.append(fill, el("span", "gw"));
       const steps = el("div", "steps");
