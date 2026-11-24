@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-24T16:42:21Z",
+ "maj": "2026-11-24T20:41:58Z",
  "reports": [
+  {
+   "date": "2026-11-24T20:41:58Z",
+   "titre": "J+5 soir : omonkey entre « en jeu » à ~5 i/s et prend la tête de PortWatch (76 %)",
+   "statut": "partiel",
+   "resume": "PortWatch (24/11) rapporte que le build d'omonkey (xbox-emulator) charge les shaders de GTA VI et permet de marcher lentement dans la prison de Lucia à ~5 i/s, en direct sur Rumble : 2e projet « en jeu » après CGBJ. Rien de jouable, aucun code public ; pas de nouvelles officielles.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 24/11 à 20 h 40 UTC, aucune date, config ni page Steam/Epic de Rockstar ou Take-Two. La rumeur d'un PC « début 2027 » reste non confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Relevé synchronisé (7 h 34 UTC) : VIctory 67 % (en jeu partiel 0,8), XCL 62,5 % (en jeu partiel 0,5), Xbox2Windows 47,5 % (menu partiel). Le site PortWatch affiche désormais omonkey en tête à 76 % (« En jeu ») devant CGBJ 72 %, pas encore dans le flux synchronisé."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "omonkey : shaders chargés, déplacement lent dans la scène de la prison à ~5 i/s, visible seulement en direct (chaîne Rumble tierce, ~1 800 abonnés), non confirmé par une source publique. XCL annonce 30 i/s et des testeurs le disent dans le monde ; CGBJ reste en jeu sans éclairage, tout est auto-déclaré."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 24/11 au soir : KytyPS5 et SharpEmu en restent à GTA V (menus, jusqu'à 60 i/s avant plantage), AnyPS5 sans version publique ; aucun test de GTA VI."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "La build Xbox fuitée le 23/11 reste non authentifiée et Rockstar se tait ; Microsoft dit collaborer avec Take-Two et Rockstar depuis l'assignation d'août (Vandal). Des copies piratées piégées circulent : toute offre de « GTA VI PC » prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Les shaders de GTA VI se chargent sur le build d'omonkey, diffusé sur Rumble",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-omonkey-shaders-prison"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "DSOGaming – Le portage non officiel CGBJ atteint le jeu",
+     "url": "https://www.dsogaming.com/news/grand-theft-auto-6-unofficial-pc-port-cgbj-now-reaches-in-game/"
+    },
+    {
+     "titre": "GTA VI PC Race – Suivi en direct des portages PC",
+     "url": "https://vuyp.github.io/gta6-pc-race/"
+    },
+    {
+     "titre": "Vandal – Xbox travaille avec Rockstar pour identifier le fuiteur de GTA 6",
+     "url": "https://vandal.elespanol.com/noticia/1350792484/xbox-trabaja-estrechamente-con-rockstar-para-descubrir-al-filtrador-de-gta-6/"
+    }
+   ]
+  },
   {
    "date": "2026-11-24T16:42:21Z",
    "titre": "J+5 après-midi : CGBJ reste seul « en jeu », pas de nouveau palier ni de version officielle",
