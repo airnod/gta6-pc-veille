@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-24T05:21:00Z",
+ "updated": "2026-11-24T04:13:54Z",
  "source": {
   "name": "PortWatch VI + GTA VI PC Race + presse",
   "url": "https://portwatch-vi.xyz/"
  },
  "leak": {
-  "status": "exécutable publié le 23/11, authenticité non confirmée, Rockstar silencieux ; Leonida hors ligne depuis le 24/11 (auteur parti)"
+  "status": "Exécutable publié le 23/11, authenticité non confirmée, Rockstar silencieux ; Leonida supprimé le 23/11, XCL dit subir des pressions."
  },
  "efforts": [
   {
@@ -49,11 +49,11 @@
     "menu": 1,
     "ingame": 0.5,
     "fps": 30,
-    "stability": "unknown"
+    "stability": "crashes often"
    },
    "stars": 457,
    "verification": "self-reported",
-   "note": "monde non confirmé"
+   "note": "monde atteint, plante"
   },
   {
    "name": "ScarlettX",
@@ -99,7 +99,8 @@
     "stability": "unknown"
    },
    "stars": 23,
-   "verification": "self-reported"
+   "verification": "self-reported",
+   "note": "écran choix du joueur"
   },
   {
    "name": "americas-recomp",
@@ -138,7 +139,7 @@
    },
    "gta": {
     "loads": 1,
-    "boots": 1,
+    "boots": 0,
     "menu": 0,
     "ingame": 0,
     "fps": 0,
@@ -215,7 +216,8 @@
     "stability": "unknown"
    },
    "stars": 1422,
-   "verification": "self-reported"
+   "verification": "self-reported",
+   "note": "menus instables, sans preuve"
   },
   {
    "name": "AnyXboxX",
@@ -392,14 +394,15 @@
    },
    "gta": {
     "loads": 1,
-    "boots": 1,
+    "boots": 0,
     "menu": 0,
     "ingame": 0,
     "fps": 0,
-    "stability": "unknown"
+    "stability": "crashes often"
    },
    "stars": 15,
-   "verification": "self-reported"
+   "verification": "self-reported",
+   "note": "images noires, plante"
   },
   {
    "name": "GrandTheftXbox",
@@ -577,14 +580,14 @@
    "gta": {
     "loads": 1,
     "boots": 1,
-    "menu": 0.5,
+    "menu": 0,
     "ingame": 0,
     "fps": 0,
-    "stability": "unknown"
+    "stability": "crashes often"
    },
    "stars": 0,
    "verification": "self-reported",
-   "note": "charge le mode histoire"
+   "note": "vidéo d'intro puis plante"
   },
   {
    "name": "G6Recomp",
@@ -635,7 +638,7 @@
   {
    "name": "VIctory",
    "tier": "tracked",
-   "approach": "Compatibility layer",
+   "approach": "Native code runner",
    "target": "GTA VI only",
    "gtaSpecific": true,
    "groundwork": {
@@ -647,13 +650,14 @@
    "gta": {
     "loads": 1,
     "boots": 1,
-    "menu": 0.5,
-    "ingame": 0,
-    "fps": 0,
+    "menu": 1,
+    "ingame": 0.5,
+    "fps": 15,
     "stability": "unknown"
    },
    "stars": 0,
-   "verification": "self-reported"
+   "verification": "self-reported",
+   "note": "carte titre, scène sombre"
   },
   {
    "name": "GTA6-BootTest",
@@ -676,7 +680,8 @@
     "stability": "unknown"
    },
    "stars": 0,
-   "verification": "self-reported"
+   "verification": "self-reported",
+   "note": "aucune capture"
   },
   {
    "name": "Holy-Interoperability",
@@ -702,9 +707,9 @@
    "verification": "self-reported"
   },
   {
-   "name": "Marvis",
+   "name": "Palmetto",
    "tier": "tracked",
-   "approach": "Unknown",
+   "approach": "Static recompilation",
    "target": "GTA VI only",
    "gtaSpecific": true,
    "groundwork": {
@@ -715,15 +720,15 @@
    },
    "gta": {
     "loads": 1,
-    "boots": 1,
-    "menu": 1,
+    "boots": 0,
+    "menu": 0,
     "ingame": 0,
     "fps": 0,
     "stability": "unknown"
    },
    "stars": 0,
-   "verification": "unverified",
-   "note": "monde annoncé, plante"
+   "verification": "self-reported",
+   "note": "suite de Leonida"
   }
  ]
 }

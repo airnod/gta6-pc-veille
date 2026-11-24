@@ -1,6 +1,66 @@
 {
- "maj": "2026-11-24T05:43:33Z",
+ "maj": "2026-11-24T05:57:52Z",
  "reports": [
+  {
+   "date": "2026-11-24T05:57:52Z",
+   "titre": "J+5 aube : XCL atteint le monde de GTA VI sur PC mais plante, toujours rien de jouable",
+   "statut": "partiel",
+   "resume": "PortWatch (mis à jour le 24/11 à 4 h 14 UTC) passe XCL à « monde atteint » : écran de chargement puis plantage GPU, et 30 i/s annoncés sans préciser où. VIctory (ex-Marvis) affiche la carte titre de la première mission sur fond noir. Le développeur de XCL dit subir des tentatives de blocage de Rockstar et Discord.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 24/11 à 6 h UTC, Rockstar et Take-Two n'ont annoncé ni date, ni config, ni page Steam/Epic ; Zelnick répète que Rockstar communiquera « en temps voulu ». Aucune nouvelle info de Schreier, Henderson ou GamesBeat."
+    },
+    {
+     "categorie": "Portages",
+     "statut": "non",
+     "texte": "XCL mène (menus à 30 i/s, monde atteint selon des testeurs mais bloqué sur un écran de chargement, chaque essai coupé par le watchdog GPU) ; VIctory a montré les menus vers 15 i/s en direct le 23/11 puis une carte titre en jeu sur scène sombre. Tout est auto-déclaré, aucun gameplay vérifié."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "non",
+     "texte": "Selon PortWatch au 24/11 : 9 projets sur 29 font tourner le code du jeu ; TuxBox affiche l'écran de choix du joueur en 4K, Xbox2Windows dit atteindre des menus instables, Five Star Recomp plante après la vidéo d'intro. Leonida a disparu le 23/11 vers 23 h 47 UTC (dépôt et Discord supprimés, auteur parti) ; Palmetto reprend son code, sans image."
+    },
+    {
+     "categorie": "Émulation PS5 (AnyPS5, KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "Rien de neuf depuis le 22/11 : compte X du développeur d'AnyPS5 suspendu (cause inconnue), SharpEmu annonce six jeux à 60 i/s, KytyPS5 reste aux menus de GTA V. Aucun test de GTA VI."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Seule voie sur PC : le Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI sur consoles et Xbox One mais pas sur PC ; absent de GeForce Now."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "L'exécutable publié le 23/11 à 14 h 36 UTC par Cyberleek reste non authentifié et Rockstar se tait. GameGPU (24/11) relaie le créateur de XCL qui dit subir des tentatives de blocage de Rockstar et Discord (aucun avis DMCA public) ; le Discord de XCL est verrouillé. Toute offre de « GTA VI PC » prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – XCL annonce 30 i/s dans GTA VI sans dire s'il dépasse les menus",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-xcl-30fps-in-game"
+    },
+    {
+     "titre": "PortWatch VI – Leonida supprimé : dépôt, Discord et créateur partis",
+     "url": "https://portwatch-vi.xyz/news/2026-11-23-leonida-nuked"
+    },
+    {
+     "titre": "PortWatch VI – Marvis diffuse GTA VI dans ses menus vers 15 i/s",
+     "url": "https://portwatch-vi.xyz/news/2026-11-23-marvis-menus-stream"
+    },
+    {
+     "titre": "GameGPU – Après Leonida, le projet XCL dans le viseur de Rockstar",
+     "url": "https://en.gamegpu.com/news/igry/posle-zakrytiya-leonida-pod-udar-rockstar-games-popal-proekt-xcl-dlya-zapuska-gta-vi"
+    },
+    {
+     "titre": "PC Gamer – Zelnick : Rockstar fera d'autres annonces en temps voulu",
+     "url": "https://pcgamer.com/games/grand-theft-auto/asked-whether-grand-theft-auto-6-will-come-to-pc-take-two-ceo-strauss-zelnick-says-rockstar-will-make-more-announcements-in-due-time"
+    }
+   ]
+  },
   {
    "date": "2026-11-24T05:43:33Z",
    "titre": "J+5 matin : pas de PC officiel, aucun portage n'a encore démarré GTA VI malgré l'exécutable publié",
