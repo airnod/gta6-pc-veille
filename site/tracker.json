@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-24T04:13:54Z",
+ "updated": "2026-11-24T08:08:33Z",
  "source": {
   "name": "PortWatch VI + GTA VI PC Race + presse",
   "url": "https://portwatch-vi.xyz/"
  },
  "leak": {
-  "status": "Exécutable publié le 23/11, authenticité non confirmée, Rockstar silencieux ; Leonida supprimé le 23/11, XCL dit subir des pressions."
+  "status": "Exécutable publié le 23/11, authenticité non confirmée, Rockstar silencieux ; Leonida et RageForge fermés, XCL dit subir des pressions."
  },
  "efforts": [
   {
@@ -51,9 +51,9 @@
     "fps": 30,
     "stability": "crashes often"
    },
-   "stars": 457,
+   "stars": 4333,
    "verification": "self-reported",
-   "note": "monde atteint, plante"
+   "note": "menus 30 i/s, monde instable"
   },
   {
    "name": "ScarlettX",
@@ -652,12 +652,12 @@
     "boots": 1,
     "menu": 1,
     "ingame": 0.5,
-    "fps": 15,
+    "fps": 30,
     "stability": "unknown"
    },
-   "stars": 0,
+   "stars": 4929,
    "verification": "self-reported",
-   "note": "carte titre, scène sombre"
+   "note": "monde chargé, écran noir"
   },
   {
    "name": "GTA6-BootTest",
@@ -729,6 +729,30 @@
    "stars": 0,
    "verification": "self-reported",
    "note": "suite de Leonida"
+  },
+  {
+   "name": "RageForge",
+   "tier": "watchlist",
+   "approach": "Unknown",
+   "target": "GTA VI",
+   "gtaSpecific": true,
+   "groundwork": {
+    "loader": 0,
+    "shaders": 0,
+    "graphics": 0,
+    "proven": 0
+   },
+   "gta": {
+    "loads": 0,
+    "boots": 0,
+    "menu": 0,
+    "ingame": 0,
+    "fps": 0,
+    "stability": "unknown"
+   },
+   "stars": 0,
+   "verification": "unverified",
+   "note": "arrêté"
   }
  ]
 }

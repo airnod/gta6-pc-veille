@@ -1,6 +1,66 @@
 {
- "maj": "2026-11-24T05:57:52Z",
+ "maj": "2026-11-24T08:41:50Z",
  "reports": [
+  {
+   "date": "2026-11-24T08:41:50Z",
+   "titre": "J+5 matin : VIctory passe à 30 i/s aux menus, XCL et VIctory toujours bloqués avant le gameplay",
+   "statut": "partiel",
+   "resume": "VGTimes (24/11, 8 h 08 UTC) rapporte que VIctory affiche ses menus à 30 i/s (contre 15 hier) et charge le monde en ~50 s, mais l'image reste noire. Pro-Gamer (24/11, 6 h 35 UTC) note la fermeture de RageForge ; XCL reste en tête, sans gameplay confirmé.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 24/11 à 8 h 40 UTC, toujours aucune date, config ni page Steam/Epic de Rockstar ou Take-Two, qui renvoie aux futures annonces de Rockstar (TweakTown). Rien de neuf chez Schreier, Henderson ou GamesBeat."
+    },
+    {
+     "categorie": "Portages",
+     "statut": "non",
+     "texte": "XCL mène : démarrage en ~4 s, menus à 30 i/s (≈21 i/s mesurés par Pro-Gamer), accès aux réglages après un correctif, VRAM passée de 15 à 3,2 Go, mais le monde plante. VIctory : menus à 30 i/s, monde chargé en ~50 s mais scène noire (0,5 à 1,8 s par image, RX 6700 XT). Auto-déclaré, aucun gameplay vérifié."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "non",
+     "texte": "Selon le tracker fan de 101Leafy (24/11, 5 h 44 UTC), XCL a fusionné 142 contributions en 24 h et VIctory 31. Palmetto (suite de Leonida) valide 26 498 modules de shaders sur 26 503 (RTX 4090) mais bute sur 5 pipelines Mesh Shader de la minicarte ; RageForge est fermé « pour évaluer le cadre légal »."
+    },
+    {
+     "categorie": "Émulation PS5 (AnyPS5, KytyPS5, SharpEmu)",
+     "statut": "non",
+     "texte": "Rien de neuf depuis le 22/11 : SharpEmu annonce six jeux à 60 i/s, KytyPS5 reste aux menus de GTA V, AnyPS5 sans version publique. Aucun test de GTA VI."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Seule voie sur PC : le Remote Play depuis sa propre PS5 ou Xbox Series ; des bricolages DLSS 5 sur flux PS5 (59 à 280 i/s affichés, 18/11) n'ajoutent que de la latence. Xbox Cloud Gaming reste fermé au PC pour GTA VI, absent de GeForce Now."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "L'exécutable publié le 23/11 reste non authentifié, Rockstar se tait. XCL dit subir des pressions de Rockstar et Discord (aucun avis DMCA public), RageForge a fermé son dépôt ; Pro-Gamer signale des dépôts malveillants. Toute offre de « GTA VI PC » prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "VGTimes – VIctory atteint les menus à 30 i/s mais n'est pas jouable",
+     "url": "https://vgtimes.com/gaming-news/175565-gta-vi-port-project-victory-reaches-menus-at-30-fps-but-isnt-playable.html"
+    },
+    {
+     "titre": "Pro-Gamer – GTA 6 sur PC : menus à 30 FPS avec XCL malgré la fin de Leonida",
+     "url": "https://pro-gamer.fr/gta-6-pc-menus-30-fps-windows-11-xcl-fermeture-leonida-rageforge-palmetto/"
+    },
+    {
+     "titre": "GTA VI Tracker (fan) – Avancement de XCL et VIctory",
+     "url": "https://gta.mtwildwood.net/gta-6-pc/"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "Mezha – GTA 6 sur PC via Remote Play avec DLSS 5",
+     "url": "https://mezha.ua/en/news/gta-6-zapustili-na-pk-z-dlss-5-ta-60-fps-317388/"
+    }
+   ]
+  },
   {
    "date": "2026-11-24T05:57:52Z",
    "titre": "J+5 aube : XCL atteint le monde de GTA VI sur PC mais plante, toujours rien de jouable",
