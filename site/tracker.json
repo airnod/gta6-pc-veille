@@ -7,6 +7,7 @@
  "efforts": [
   {
    "name": "VIctory",
+   "repo": "Marvisak/VIctory",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
@@ -26,6 +27,7 @@
   },
   {
    "name": "xbox-emulator",
+   "repo": "omonkeyz/xbox-emulator",
    "tier": "tracked",
    "approach": "Compatibility runtime",
    "target": "Any Xbox Series game",
@@ -50,6 +52,7 @@
   },
   {
    "name": "XCL",
+   "repo": "ivall/xcl",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -74,6 +77,7 @@
   },
   {
    "name": "ScarlettX",
+   "repo": "Freminet/ScarlettX",
    "tier": "tracked",
    "approach": "HLE emulator",
    "target": "Any Xbox Series game",
@@ -98,6 +102,7 @@
   },
   {
    "name": "TuxBox",
+   "repo": "brcly/TuxBox",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -122,6 +127,7 @@
   },
   {
    "name": "americas-recomp",
+   "repo": "realdody/americas-recomp",
    "tier": "tracked",
    "approach": "Relinker + shader recompiler",
    "target": "GTA VI first",
@@ -146,6 +152,7 @@
   },
   {
    "name": "Leonida",
+   "repo": "ItsNotRexed/Leonida",
    "tier": "tracked",
    "approach": "Static recompilation",
    "target": "GTA VI only",
@@ -170,6 +177,7 @@
   },
   {
    "name": "OpenScarlett",
+   "repo": "californiaAlmonds/OpenScarlett",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -194,6 +202,7 @@
   },
   {
    "name": "scarlett-layer",
+   "repo": "jadeowaowa/scarlett-layer",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -218,6 +227,7 @@
   },
   {
    "name": "Xbox2Windows",
+   "repo": "R0Y00/Xbox2Windows",
    "tier": "tracked",
    "approach": "Static recompilation",
    "target": "Any Xbox Series game",
@@ -242,6 +252,7 @@
   },
   {
    "name": "AnyXboxX",
+   "repo": "LooperSalty/AnyXboxX",
    "tier": "tracked",
    "approach": "HLE emulator",
    "target": "Any Xbox Series game",
@@ -266,6 +277,7 @@
   },
   {
    "name": "XValkyrie",
+   "repo": "sammwyy/xvalkyrie",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox One or Series game",
@@ -290,6 +302,7 @@
   },
   {
    "name": "GTAVI-Recomp",
+   "repo": "JamesCicada/GTAVI-Recomp",
    "tier": "watchlist",
    "approach": "Relinker (PS5 route)",
    "target": "PS5 build",
@@ -314,6 +327,7 @@
   },
   {
    "name": "AnyXboxSeries",
+   "repo": "edupode/anyxboxseries",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
@@ -338,6 +352,7 @@
   },
   {
    "name": "SCARAB",
+   "repo": "p-portela/SCARAB",
    "tier": "watchlist",
    "approach": "API bridge",
    "target": "Any Xbox Series game",
@@ -362,6 +377,7 @@
   },
   {
    "name": "AnyBox",
+   "repo": "Dark3581/AnyBox",
    "tier": "watchlist",
    "approach": "Relinker",
    "target": "Any Xbox Series game",
@@ -386,6 +402,7 @@
   },
   {
    "name": "PercyScarlett",
+   "repo": "rpatty-dev/PercyScarlett",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -410,6 +427,7 @@
   },
   {
    "name": "GrandTheftXbox",
+   "repo": "zohaiblazuli/GrandTheftXbox",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -434,6 +452,7 @@
   },
   {
    "name": "Scarlett Windows Compat",
+   "repo": "ProhorovIlja/Scarlett-Windows-Compat",
    "tier": "watchlist",
    "approach": "Research probes",
    "target": "Any Xbox Series game",
@@ -458,6 +477,7 @@
   },
   {
    "name": "DedSec",
+   "repo": "Hylanderry/DedSec",
    "tier": "watchlist",
    "approach": "Static recompilation (DX12)",
    "target": "GTA VI",
@@ -482,6 +502,7 @@
   },
   {
    "name": "Xbgtasix",
+   "repo": "ljm-233/Xbgtasix",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -506,6 +527,7 @@
   },
   {
    "name": "SeriesX Emulator",
+   "repo": "anrq0/SeriesX-Emulator",
    "tier": "watchlist",
    "approach": "Emulator",
    "target": "Any Xbox Series game",
@@ -530,6 +552,7 @@
   },
   {
    "name": "GTA6-COMPAT-LAYER (ScarlettCompat)",
+   "repo": "SSTGxf/ScarlettCompat",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI (Xbox Series)",
@@ -554,6 +577,7 @@
   },
   {
    "name": "XlaunchVI",
+   "repo": "JPTuba9/xlaunch-vi",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -578,6 +602,7 @@
   },
   {
    "name": "OpenScarlett (Community Edition)",
+   "repo": "OpenCommunityEdition/OpenScarlett",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
@@ -602,6 +627,7 @@
   },
   {
    "name": "Five Star Recomp",
+   "repo": "ThatRecompDev/five-star-recomp",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
@@ -626,6 +652,7 @@
   },
   {
    "name": "G6Recomp",
+   "repo": "Kajcsi/G6Recomp",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
@@ -650,6 +677,7 @@
   },
   {
    "name": "GTA6-BootTest",
+   "repo": "OnlyMoisties/GTA6-BootTest",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
@@ -674,6 +702,7 @@
   },
   {
    "name": "Palmetto",
+   "repo": "luizwidmer/palmetto",
    "tier": "watchlist",
    "approach": "Static recompilation",
    "target": "GTA VI only",

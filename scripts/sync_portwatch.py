@@ -1,13 +1,16 @@
 """Convertit le tracker.json public de PortWatch VI en site/tracker.json.
 
 Usage : python3 scripts/sync_portwatch.py <tracker PortWatch> <sortie>
-On ne garde que les champs utiles au classement : aucun lien vers les dépôts des projets.
+On ne garde que les champs utiles au classement, plus le nom du dépôt GitHub de chaque projet
+(uniquement les projets examinés par PortWatch, jamais les candidats non vérifiés).
 """
 import json
 import re
 import sys
 
 URL = re.compile(r"https?://\S+", re.I)
+# Nom de dépôt GitHub « propriétaire/projet » : le lien est reconstruit par la page, jamais repris tel quel
+REPO = re.compile(r"^[A-Za-z0-9][A-Za-z0-9-]{0,38}/[A-Za-z0-9._-]{1,100}$")
 
 
 def clean(v, n=80):
@@ -29,6 +32,7 @@ for e in src.get("efforts", []):
     g = e.get("gta") or {}
     efforts.append({
         "name": clean(e.get("name")),
+        "repo": e["repo"] if isinstance(e.get("repo"), str) and REPO.match(e["repo"]) else None,
         "tier": "watchlist" if e.get("tier") == "watchlist" else "tracked",
         "approach": clean(e.get("approach")),
         "target": clean(e.get("target")),

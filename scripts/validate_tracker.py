@@ -42,8 +42,11 @@ for i, e in enumerate(eff):
         text(e.get(k, ""), f"{w}.{k}", 80)
     if e.get("tier") not in ("tracked", "watchlist"):
         fail(f"{w}.tier invalide")
-    if set(e) & {"repo", "url", "link", "download"}:
-        fail(f"{w} ne doit contenir aucun lien vers le projet")
+    if set(e) & {"url", "link", "download"}:
+        fail(f"{w} ne doit contenir aucun lien brut")
+    repo = e.get("repo")
+    if repo is not None and not (isinstance(repo, str) and re.match(r"^[A-Za-z0-9][A-Za-z0-9-]{0,38}/[A-Za-z0-9._-]{1,100}$", repo)):
+        fail(f"{w}.repo doit être de la forme propriétaire/projet")
     gw = e.get("groundwork")
     if gw is not None:
         for k in ("loader", "shaders", "graphics", "proven"):

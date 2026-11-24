@@ -117,6 +117,7 @@
     "HLE emulator": "Émulateur HLE", "Emulator": "Émulateur", "Static recompilation": "Recompilation statique",
     "Static recompilation (DX12)": "Recompilation statique (DX12)", "Relinker": "Relinker", "Relinker (PS5 route)": "Relinker (version PS5)",
     "Relinker + shader recompiler": "Relinker + recompilation des shaders", "API bridge": "Pont d'API", "Research probes": "Recherches" };
+  const REPO_RE = /^[A-Za-z0-9][A-Za-z0-9-]{0,38}\/[A-Za-z0-9._-]{1,100}$/;
   const isGta = (e) => /GTA VI|PS5 build/i.test(e.target || "") && !/^Any/i.test(e.target || "");
   let raceData = [], raceFilter = "all";
   function renderRace(){
@@ -151,6 +152,11 @@
       });
       bars.append(pb, steps);
       const right = el("div", "pct"); right.append(el("b", null, e._s.score + " %"), el("small", null, label(e._s.reached)));
+      // Bouton vers le dépôt GitHub : l'adresse est reconstruite à partir du nom vérifié, jamais reprise telle quelle
+      if (typeof e.repo === "string" && REPO_RE.test(e.repo)){
+        if (e.missing || e.nuked){ right.append(el("span", "gh off", "Dépôt supprimé")); }
+        else { const a = el("a", "gh", "GitHub ↗"); a.href = "https://github.com/" + e.repo; a.target = "_blank"; a.rel = "noopener noreferrer nofollow"; a.title = "github.com/" + e.repo; right.append(a); }
+      }
       row.append(left, bars, right);
       host.append(row);
     });
@@ -181,7 +187,7 @@
       note.append(el("span", null, "Données et barème : "));
       const src = j.source && safeUrl(j.source.url);
       if (src){ const a = el("a", null, (j.source && j.source.name) || "source"); a.href = src; a.target = "_blank"; a.rel = "noopener noreferrer"; note.append(a); }
-      note.append(el("span", null, ", mises à jour " + fmt(j.updated) + ". 0-25 % = préparation, puis Exe lancé 25 %, 1re image 40 %, Menu 55 %, En jeu 70 %, 30 FPS 85 %, Stable 100 %. Chiffres auto-déclarés par les projets. Aucun lien vers les projets ni vers la fuite."));
+      note.append(el("span", null, ", mises à jour " + fmt(j.updated) + ". 0-25 % = préparation, puis Exe lancé 25 %, 1re image 40 %, Menu 55 %, En jeu 70 %, 30 FPS 85 %, Stable 100 %. Chiffres auto-déclarés par les projets. Les boutons GitHub mènent au code source des projets suivis par PortWatch : aucun ne fournit le jeu, et tout « GTA VI PC prêt à jouer » est une arnaque."));
       renderRace();
     } catch (e) {
       $("racelist").replaceChildren(el("div", "empty", "Impossible de charger la course pour le moment."));
