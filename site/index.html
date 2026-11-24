@@ -35,16 +35,25 @@
   h2{font-size:15px;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin:0 0 10px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
   .verdict{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-  .pill{font-family:"JetBrains Mono",monospace;font-size:12px;padding:4px 10px;border-radius:99px;border:1px solid currentColor}
+  .pill{white-space:nowrap;flex:none;font-family:"JetBrains Mono",monospace;font-size:12px;padding:4px 10px;border-radius:99px;border:1px solid currentColor}
   .p-ok{color:var(--ok)} .p-warn{color:var(--warn)} .p-ko{color:var(--ko)}
   .meta{color:var(--mute);font-size:13px;font-family:"JetBrains Mono",monospace}
-  .resume{font-size:17px;margin:10px 0 4px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:14px}
-  .pt{border:1px solid var(--line);border-radius:10px;padding:12px;background:#110e19}
-  .pt h3{margin:0 0 6px;font-size:14px;display:flex;justify-content:space-between;gap:8px}
-  .pt p{margin:0;font-size:14px;color:#d6d0e2}
-  .src{margin-top:14px;font-size:13px}
-  .src a{display:inline-block;margin:2px 10px 2px 0}
+  .rep-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .rep-t{margin:0 0 4px;font-size:20px;line-height:1.25}
+  .lead{font-size:16px;margin:14px 0 4px;padding:12px 14px;border-left:3px solid var(--pink);background:#110e19;border-radius:0 10px 10px 0}
+  .facts{margin-top:14px;border-top:1px solid var(--line)}
+  .fact{display:grid;grid-template-columns:210px 1fr;gap:14px;padding:12px 2px;border-bottom:1px solid var(--line)}
+  .fact-h{display:flex;align-items:flex-start;gap:8px;font-weight:700;font-size:14px}
+  .fact p{margin:0;font-size:14px;color:#d6d0e2}
+  .dot{flex:none;width:9px;height:9px;border-radius:50%;margin-top:6px;background:var(--ko)}
+  .d-ok{background:var(--ok)} .d-partiel{background:var(--warn)}
+  .src{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);background:#110e19;text-decoration:none}
+  .chip:hover{border-color:var(--teal)}
+  details.hist summary{display:grid;grid-template-columns:150px 1fr auto;align-items:center}
+  .hd{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute)}
+  .ht{font-size:14px}
+  @media (max-width:620px){.fact{grid-template-columns:1fr;gap:4px}details.hist summary{grid-template-columns:1fr auto}.hd{grid-column:1 / -1}}
   details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
   summary{cursor:pointer;padding:12px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
   details .body{padding:0 16px 14px}
@@ -65,7 +74,12 @@
   .big b{font-family:"JetBrains Mono",monospace;font-size:28px}
   .pbar{position:relative;height:8px;border-radius:99px;background:#221d30;overflow:hidden}
   .pbar i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--pink),var(--orange))}
-  .pbar .gw{position:absolute;top:0;bottom:0;left:25%;width:1px;background:rgba(255,255,255,.35)}
+  .pbar .tk{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,.18)}
+  .rk{font-family:"JetBrains Mono",monospace;color:var(--mute);margin-right:8px;font-weight:400}
+  .row .pct b{display:block;font-size:15px}
+  .row .pct small{display:block;font-size:11px;color:var(--mute);font-family:"Space Grotesk",sans-serif}
+  .t-ko{background:#3a1820;color:#ff9aa5}
+  #ovleader{margin-top:6px}
   .filters{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 8px}
   .filters button{background:#110e19;color:var(--txt);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
   .filters button[aria-pressed="true"]{border-color:var(--teal);color:var(--teal)}
@@ -103,17 +117,20 @@
   <section>
     <h2>La course au portage</h2>
     <div class="card" id="race">
-      <div class="big"><div class="pbar"><i id="ovbar"></i><span class="gw"></span></div><b id="ovpct">–</b></div>
+      <div class="big"><div class="pbar"><i id="ovbar"></i></div><b id="ovpct">–</b></div>
+      <div class="meta" id="ovleader"></div>
       <div class="tiles">
-        <div class="tile"><b id="t-boot">–</b><span>GTA VI démarré ?</span></div>
-        <div class="tile"><b id="t-mile">–</b><span>Meilleur jalon</span></div>
+        <div class="tile"><b id="t-mile">–</b><span>Jalon le plus avancé</span></div>
         <div class="tile"><b id="t-top3">–</b><span>Moyenne top 3</span></div>
+        <div class="tile"><b id="t-boot">–</b><span>Affichent GTA VI</span></div>
         <div class="tile"><b id="t-count">–</b><span>Projets suivis</span></div>
       </div>
       <div class="filters" role="group" aria-label="Filtrer les projets">
-        <button type="button" data-f="all" aria-pressed="true">Tous les projets suivis</button>
+        <button type="button" data-f="all" aria-pressed="true">Course</button>
         <button type="button" data-f="gta" aria-pressed="false">Spécifiques GTA VI</button>
+        <button type="button" data-f="any" aria-pressed="false">Tout jeu Xbox</button>
         <button type="button" data-f="watch" aria-pressed="false">En observation</button>
+        <button type="button" data-f="off" aria-pressed="false">Hors ligne</button>
       </div>
       <div class="race" id="racelist"><div class="empty">Chargement…</div></div>
       <p class="note" id="racenote"></p>

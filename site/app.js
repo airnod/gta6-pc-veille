@@ -22,25 +22,29 @@
   // ---- rendu sûr (les données sont traitées comme du texte) ----
   function el(tag, cls, text){ const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = String(text); return e; }
   function safeUrl(u){ try { const x = new URL(u); return (x.protocol === "https:" || x.protocol === "http:") ? x.href : null; } catch { return null; } }
-  const STATUTS = { ok:["p-ok","Jouable"], partiel:["p-warn","Partiel / contournement"], non:["p-ko","Pas encore"] };
+  const STATUTS = { ok:["p-ok","Jouable"], partiel:["p-warn","En approche"], non:["p-ko","Pas encore"] };
   function pill(st){ const [c, l] = STATUTS[st] || STATUTS.non; return el("span", "pill " + c, l); }
   function fmt(iso){ try { return new Date(iso).toLocaleString("fr-FR", { timeZone:"Europe/Paris", dateStyle:"medium", timeStyle:"short" }); } catch { return iso; } }
+  // Le Remote Play et le cloud ne sont ni du portage ni de l'émulation : on ne les affiche pas
+  const HORS_SUJET = /remote\s*play|cloud|streaming/i;
 
   function renderBody(r, host){
-    if (r.resume) host.append(el("p", "resume", r.resume));
-    if (Array.isArray(r.points) && r.points.length){
-      const g = el("div", "grid");
-      r.points.forEach(p => {
-        const box = el("div", "pt");
-        const h3 = el("h3"); h3.append(el("span", null, p.categorie || "")); if (p.statut) h3.append(pill(p.statut));
-        box.append(h3, el("p", null, p.texte || ""));
-        g.append(box);
+    if (r.resume) host.append(el("p", "lead", r.resume));
+    const pts = (Array.isArray(r.points) ? r.points : []).filter(p => !HORS_SUJET.test(p.categorie || ""));
+    if (pts.length){
+      const list = el("div", "facts");
+      pts.forEach(p => {
+        const row = el("div", "fact");
+        const head = el("div", "fact-h");
+        head.append(el("span", "dot d-" + (STATUTS[p.statut] ? p.statut : "non")), el("span", null, p.categorie || ""));
+        row.append(head, el("p", null, p.texte || ""));
+        list.append(row);
       });
-      host.append(g);
+      host.append(list);
     }
     if (Array.isArray(r.sources) && r.sources.length){
-      const s = el("div", "src"); s.append(el("span", "meta", "Sources : "));
-      r.sources.forEach(x => { const u = safeUrl(x && x.url); if (!u) return; const a = el("a", null, x.titre || new URL(u).hostname); a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer"; s.append(a); });
+      const s = el("div", "src");
+      r.sources.forEach(x => { const u = safeUrl(x && x.url); if (!u) return; const a = el("a", "chip", x.titre || new URL(u).hostname); a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer"; s.append(a); });
       host.append(s);
     }
   }
@@ -52,16 +56,16 @@
     // Les vérifications « rien de nouveau » n'ont pas de points : on affiche le dernier vrai rapport
     const full = list.filter(r => Array.isArray(r.points) && r.points.length);
     const first = full[0] || list[0];
-    const rest = full.slice(1);
-    const v = el("div", "verdict");
-    v.append(pill(list[0].statut), el("span", "meta", "Dernière vérif : " + fmt(list[0].date) + " · rapport du " + fmt(first.date)));
-    latest.append(v);
-    if (list[0] !== first && list[0].resume) latest.append(el("p", "meta", list[0].resume));
+    const head = el("div", "rep-h");
+    const titles = el("div"); titles.append(el("h3", "rep-t", first.titre || "Rapport"), el("div", "meta", fmt(first.date) + (list[0] !== first ? " · dernière vérification " + fmt(list[0].date) : "")));
+    head.append(titles, pill(first.statut));
+    latest.append(head);
     renderBody(first, latest);
+    const rest = full.slice(1);
     if (!rest.length){ hist.append(el("div", "empty", "L'historique se remplira au fil des rapports.")); return; }
     rest.forEach(r => {
-      const d = el("details"), sm = el("summary");
-      sm.append(pill(r.statut), el("span", "meta", fmt(r.date)), el("span", null, r.titre || ""));
+      const d = el("details", "hist"), sm = el("summary");
+      sm.append(el("span", "hd", fmt(r.date)), el("span", "ht", r.titre || ""), pill(r.statut));
       const b = el("div", "body"); renderBody(r, b);
       d.append(sm, b); hist.append(d);
     });
@@ -84,48 +88,70 @@
   load(); setInterval(load, 10 * 60 * 1000);
 
 
-  // ---- course au portage (données PortWatch VI, barème inspiré de leur méthode) ----
-  const STAB = { stable: 1, playable: 0.66, "crashes often": 0.33, crashes: 0.33 };
+  // ---- course au portage : données et barème de PortWatch VI (copie fidèle de leur scoring.js) ----
+  const MILESTONES = [["groundwork","Préparation",0],["loads","Exe lancé",25],["boots","1re image",40],["menu","Menu principal",55],["ingame","En jeu",70],["fps30","30 FPS",85],["stable","Stable",100]];
+  const TICK = Object.fromEntries(MILESTONES.map(m => [m[0], m[2]]));
+  const GW_WEIGHTS = { loader: 0.2, shaders: 0.28, graphics: 0.32, proven: 0.2 };
+  const STAB = { unknown: 0, constant: 0, often: 0.25, sometimes: 0.55, rarely: 0.8, stable: 1 };
+  const clamp01 = (v) => (Number.isFinite(+v) ? Math.min(1, Math.max(0, +v)) : 0);
+  function scoreEffort(e){
+    const gw = Object.keys(GW_WEIGHTS).reduce((s, k) => s + GW_WEIGHTS[k] * clamp01((e.groundwork || {})[k]), 0);
+    const gta = e.gta || {};
+    let score = TICK.loads * gw, reached = "groundwork", prev = score;
+    for (const k of ["loads", "boots", "menu", "ingame"]){
+      const v = clamp01(gta[k]);
+      if (v >= 1){ score = TICK[k]; prev = score; reached = k; continue; }
+      if (v > 0) score = Math.max(score, prev + v * (TICK[k] - prev));
+      break;
+    }
+    if (reached === "ingame"){
+      const fps = clamp01((+gta.fps || 0) / 30), st = STAB[gta.stability] || 0;
+      score = TICK.ingame + fps * (TICK.fps30 - TICK.ingame) + st * (TICK.stable - TICK.fps30);
+      if (fps >= 1) reached = "fps30";
+      if (fps >= 1 && st >= 1) reached = "stable";
+    }
+    return { score: Math.round(score * 10) / 10, reached, gw };
+  }
+  const label = (k) => (MILESTONES.find(m => m[0] === k) || MILESTONES[0])[1];
   const APPROCHES = { "Compatibility layer": "Couche de compatibilité", "Compatibility runtime": "Runtime de compatibilité",
     "HLE emulator": "Émulateur HLE", "Emulator": "Émulateur", "Static recompilation": "Recompilation statique",
     "Static recompilation (DX12)": "Recompilation statique (DX12)", "Relinker": "Relinker", "Relinker (PS5 route)": "Relinker (version PS5)",
-    "Relinker + shader recompiler": "Relinker + recompilation des shaders", "Fork of XCL": "Dérivé de XCL", "Boot harness": "Banc de démarrage", "Unknown": "Méthode non publiée", "API bridge": "Pont d'API", "Research probes": "Recherches" };
-  const num = (v) => { const n = Number(v); return Number.isFinite(n) ? Math.min(1, Math.max(0, n)) : 0; };
-  function score(e){
-    const g = e.groundwork || {}, t = e.gta || {};
-    // un projet qui démarre vraiment GTA VI a forcément terminé son travail préparatoire
-    const gw = num(t.boots) > 0 ? 25 : (num(g.loader) + num(g.shaders) + num(g.graphics) + num(g.proven)) / 4 * 25;
-    const ms = (num(t.loads) + num(t.boots) + num(t.menu) + num(t.ingame)) * 11.25;
-    const fps = num((Number(t.fps) || 0) / 30) * 15;
-    const st = (STAB[String(t.stability || "").toLowerCase()] || 0) * 15;
-    return Math.round((gw + ms + (fps + st) * num(t.ingame)) * 10) / 10;
-  }
-  const JALONS = [["loads", "Charge"], ["boots", "Démarre"], ["menu", "Menu"], ["ingame", "En jeu"]];
-  function bestMilestone(list){
-    let best = "Aucun";
-    JALONS.forEach(([k, l]) => { if (list.some(e => num((e.gta || {})[k]) > 0)) best = l + (list.some(e => num((e.gta || {})[k]) >= 1) ? "" : " (partiel)"); });
-    return best;
-  }
+    "Relinker + shader recompiler": "Relinker + recompilation des shaders", "API bridge": "Pont d'API", "Research probes": "Recherches" };
+  const isGta = (e) => /GTA VI|PS5 build/i.test(e.target || "") && !/^Any/i.test(e.target || "");
   let raceData = [], raceFilter = "all";
   function renderRace(){
     const host = $("racelist"); host.replaceChildren();
-    let list = raceData.filter(e => raceFilter === "watch" ? e.tier === "watchlist" : e.tier !== "watchlist");
-    if (raceFilter === "gta") list = raceData.filter(e => e.gtaSpecific);
-    list.sort((a, b) => b._s - a._s || (b.stars || 0) - (a.stars || 0));
+    let list;
+    if (raceFilter === "watch") list = raceData.filter(e => e.tier === "watchlist" && !e.nuked);
+    else if (raceFilter === "off") list = raceData.filter(e => e.nuked || e.missing);
+    else {
+      list = raceData.filter(e => e.tier !== "watchlist" && !e.nuked);
+      if (raceFilter === "gta") list = list.filter(isGta);
+      if (raceFilter === "any") list = list.filter(e => !isGta(e));
+    }
+    list.sort((a, b) => b._s.score - a._s.score || (b.stars || 0) - (a.stars || 0));
     if (!list.length){ host.append(el("div", "empty", "Aucun projet dans cette catégorie.")); return; }
-    list.forEach(e => {
+    list.forEach((e, i) => {
       const row = el("div", "row");
-      const left = el("div"); const nm = el("div", "nm", e.name || "?");
-      if (e.gtaSpecific) nm.append(el("span", "tag", "GTA VI"));
+      const left = el("div");
+      const nm = el("div", "nm"); nm.append(el("span", "rk", String(i + 1)), el("span", null, e.name || "?"));
+      if (isGta(e)) nm.append(el("span", "tag", "GTA VI"));
       if (e.verification === "self-reported") nm.append(el("span", "tag", "auto-déclaré"));
-      if (e.verification === "unverified") nm.append(el("span", "tag", "non vérifié"));
-      if (e.note) nm.append(el("span", "tag", e.note));
-      left.append(nm, el("div", "sub2", (APPROCHES[e.approach] || e.approach || "") + " · " + (e.gtaSpecific ? "GTA VI" : "tout jeu Xbox Series") + " · ★ " + (e.stars || 0).toLocaleString("fr-FR")));
-      const bars = el("div", "bars"); const pb = el("div", "pbar"); const fill = el("i"); fill.style.width = e._s + "%"; pb.append(fill, el("span", "gw"));
+      if (e.nuked) nm.append(el("span", "tag t-ko", "supprimé"));
+      else if (e.missing) nm.append(el("span", "tag t-ko", "dépôt disparu"));
+      left.append(nm, el("div", "sub2", (APPROCHES[e.approach] || e.approach || "") + " · " + (isGta(e) ? "GTA VI" : "tout jeu Xbox Series") + " · ★ " + (e.stars || 0).toLocaleString("fr-FR")));
+      const bars = el("div", "bars"); const pb = el("div", "pbar"); const fill = el("i"); fill.style.width = e._s.score + "%"; pb.append(fill);
+      [25, 40, 55, 70, 85].forEach(x => { const t = el("span", "tk"); t.style.left = x + "%"; pb.append(t); });
       const steps = el("div", "steps");
-      JALONS.forEach(([k, l]) => { const v = num((e.gta || {})[k]); steps.append(el("em", v >= 1 ? "full" : v > 0 ? "half" : "", l)); });
+      const idx = MILESTONES.findIndex(m => m[0] === e._s.reached);
+      MILESTONES.slice(1).forEach((m, k) => {
+        const reached = k + 1 <= idx;
+        const partial = idx > 0 && !reached && k + 1 === idx + 1 && e._s.score > MILESTONES[idx][2];
+        steps.append(el("em", reached ? "full" : partial ? "half" : "", m[1]));
+      });
       bars.append(pb, steps);
-      row.append(left, bars, el("div", "pct", e._s.toFixed(1) + " %"));
+      const right = el("div", "pct"); right.append(el("b", null, e._s.score + " %"), el("small", null, label(e._s.reached)));
+      row.append(left, bars, right);
       host.append(row);
     });
   }
@@ -139,21 +165,23 @@
       const r = await fetch("tracker.json?t=" + Math.floor(Date.now() / 6e5), { cache: "no-store" });
       if (!r.ok) throw new Error(r.status);
       const j = await r.json();
-      raceData = (Array.isArray(j.efforts) ? j.efforts : []).map(e => Object.assign({}, e, { _s: score(e) }));
-      const tracked = raceData.filter(e => e.tier !== "watchlist");
-      const sorted = tracked.map(e => e._s).sort((a, b) => b - a);
-      const best = sorted[0] || 0, top3 = sorted.slice(0, 3);
-      $("ovpct").textContent = best.toFixed(1) + " %"; $("ovbar").style.width = best + "%";
-      const booted = raceData.some(e => num((e.gta || {}).boots) > 0);
-      $("t-boot").textContent = booted ? "Oui" : "Pas encore";
-      $("t-mile").textContent = bestMilestone(raceData);
-      $("t-top3").textContent = top3.length ? (top3.reduce((a, b) => a + b, 0) / top3.length).toFixed(1) + " %" : "–";
-      $("t-count").textContent = tracked.length + " (+" + (raceData.length - tracked.length) + ")";
+      raceData = (Array.isArray(j.efforts) ? j.efforts : []).map(e => Object.assign({}, e, { _s: scoreEffort(e) }));
+      // Même calcul que PortWatch : classement sans les projets supprimés, tous les projets comptés
+      const ranked = raceData.filter(e => !e.nuked).sort((a, b) => b._s.score - a._s.score || (b.stars || 0) - (a.stars || 0));
+      const leader = ranked[0], top = ranked.slice(0, 3);
+      const best = leader ? leader._s.score : 0;
+      $("ovpct").textContent = best + " %"; $("ovbar").style.width = best + "%";
+      $("ovleader").textContent = leader ? "En tête : " + leader.name + " · a atteint « " + label(leader._s.reached) + " »" : "";
+      const furthest = ranked.reduce((m, e) => Math.max(m, MILESTONES.findIndex(x => x[0] === e._s.reached)), 0);
+      $("t-mile").textContent = MILESTONES[furthest][1];
+      $("t-top3").textContent = top.length ? Math.round(top.reduce((a, e) => a + e._s.score, 0) / top.length * 10) / 10 + " %" : "–";
+      $("t-boot").textContent = raceData.filter(e => clamp01((e.gta || {}).boots) >= 1).length + " / " + raceData.length;
+      $("t-count").textContent = String(raceData.length);
       const note = $("racenote"); note.replaceChildren();
-      note.append(el("span", null, "Progression = projet le plus avancé. Les 25 premiers % = travail préparatoire (chargeur, shaders, rendu, preuve sur d'autres jeux) ; au-delà, seuls de vrais jalons GTA VI comptent (charge, démarre, menu, en jeu), puis FPS et stabilité. Jalon partiel = moitié. Données : "));
+      note.append(el("span", null, "Données et barème : "));
       const src = j.source && safeUrl(j.source.url);
       if (src){ const a = el("a", null, (j.source && j.source.name) || "source"); a.href = src; a.target = "_blank"; a.rel = "noopener noreferrer"; note.append(a); }
-      note.append(el("span", null, " · mise à jour " + fmt(j.updated) + (j.leak && j.leak.status ? " · Fuite : " + j.leak.status : "") + ". Aucun lien vers les projets ni vers la fuite."));
+      note.append(el("span", null, ", mises à jour " + fmt(j.updated) + ". 0-25 % = préparation, puis Exe lancé 25 %, 1re image 40 %, Menu 55 %, En jeu 70 %, 30 FPS 85 %, Stable 100 %. Chiffres auto-déclarés par les projets. Aucun lien vers les projets ni vers la fuite."));
       renderRace();
     } catch (e) {
       $("racelist").replaceChildren(el("div", "empty", "Impossible de charger la course pour le moment."));

@@ -1,4 +1,4 @@
-"""Vérifie site/tracker.json (données de la course au portage) avant publication."""
+"""Vérifie site/tracker.json (classement de la course, données PortWatch VI) avant publication."""
 import json
 import re
 import sys
@@ -19,6 +19,11 @@ def text(v, field, n):
         fail(f"{field} contient un lien ou du contenu suspect")
 
 
+def unit(v, field):
+    if not isinstance(v, (int, float)) or isinstance(v, bool) or not 0 <= v <= 1:
+        fail(f"{field} doit être un nombre entre 0 et 1")
+
+
 raw = open(sys.argv[1], "rb").read()
 if len(raw) > 200_000:
     fail("fichier trop gros")
@@ -28,11 +33,9 @@ src = d.get("source", {})
 if urlparse(src.get("url", "")).scheme != "https":
     fail("source.url doit être en https")
 text(src.get("name", ""), "source.name", 60)
-if "leak" in d:
-    text(d["leak"].get("status", ""), "leak.status", 300)
 eff = d.get("efforts")
-if not isinstance(eff, list) or not 1 <= len(eff) <= 80:
-    fail("'efforts' doit contenir entre 1 et 80 projets")
+if not isinstance(eff, list) or not 1 <= len(eff) <= 120:
+    fail("'efforts' doit contenir entre 1 et 120 projets")
 for i, e in enumerate(eff):
     w = f"efforts[{i}]"
     for k in ("name", "approach", "target"):
@@ -41,21 +44,21 @@ for i, e in enumerate(eff):
         fail(f"{w}.tier invalide")
     if set(e) & {"repo", "url", "link", "download"}:
         fail(f"{w} ne doit contenir aucun lien vers le projet")
-    for k in ("loader", "shaders", "graphics", "proven"):
-        v = e.get("groundwork", {}).get(k)
-        if not isinstance(v, (int, float)) or not 0 <= v <= 1:
-            fail(f"{w}.groundwork.{k} doit être entre 0 et 1")
+    gw = e.get("groundwork")
+    if gw is not None:
+        for k in ("loader", "shaders", "graphics", "proven"):
+            unit(gw.get(k, 0), f"{w}.groundwork.{k}")
     g = e.get("gta", {})
     for k in ("loads", "boots", "menu", "ingame"):
-        if g.get(k) not in (0, 0.5, 1, 0.0, 1.0):
-            fail(f"{w}.gta.{k} doit valoir 0, 0.5 ou 1")
-    if not isinstance(g.get("fps", 0), (int, float)) or not 0 <= g.get("fps", 0) <= 240:
+        unit(g.get(k, 0), f"{w}.gta.{k}")
+    fps = g.get("fps", 0)
+    if not isinstance(fps, (int, float)) or not 0 <= fps <= 240:
         fail(f"{w}.gta.fps invalide")
-    text(str(g.get("stability", "unknown")), f"{w}.gta.stability", 30)
-    if "note" in e:
-        text(e["note"], f"{w}.note", 40)
-    if e.get("verification", "self-reported") not in ("self-reported", "verified", "unverified"):
-        fail(f"{w}.verification invalide")
+    text(str(g.get("stability", "unknown")), f"{w}.gta.stability", 20)
+    text(str(e.get("verification", "")), f"{w}.verification", 20)
+    for k in ("missing", "nuked"):
+        if not isinstance(e.get(k, False), bool):
+            fail(f"{w}.{k} doit être vrai ou faux")
     if not isinstance(e.get("stars", 0), int) or e.get("stars", 0) < 0:
         fail(f"{w}.stars invalide")
 print(f"OK : {len(eff)} projet(s) valides")

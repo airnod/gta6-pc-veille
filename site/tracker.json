@@ -1,19 +1,34 @@
 {
- "updated": "2026-11-24T08:08:33Z",
+ "updated": "2026-11-24T07:34:48.184Z",
  "source": {
-  "name": "PortWatch VI + GTA VI PC Race + presse",
+  "name": "PortWatch VI",
   "url": "https://portwatch-vi.xyz/"
  },
- "leak": {
-  "status": "Exécutable publié le 23/11, authenticité non confirmée, Rockstar silencieux ; Leonida et RageForge fermés, XCL dit subir des pressions."
- },
  "efforts": [
+  {
+   "name": "VIctory",
+   "tier": "tracked",
+   "approach": "Compatibility layer",
+   "target": "GTA VI only",
+   "groundwork": null,
+   "gta": {
+    "loads": 1.0,
+    "boots": 1.0,
+    "menu": 1.0,
+    "ingame": 0.8,
+    "fps": 0.0,
+    "stability": "unknown"
+   },
+   "stars": 5835,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
+  },
   {
    "name": "xbox-emulator",
    "tier": "tracked",
    "approach": "Compatibility runtime",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.85,
     "shaders": 0.35,
@@ -28,7 +43,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 1540,
+   "stars": 1724,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -36,7 +53,6 @@
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.9,
     "shaders": 0.9,
@@ -44,23 +60,23 @@
     "proven": 0.9
    },
    "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 1,
+    "loads": 1.0,
+    "boots": 1.0,
+    "menu": 1.0,
     "ingame": 0.5,
-    "fps": 30,
-    "stability": "crashes often"
+    "fps": 0.0,
+    "stability": "unknown"
    },
-   "stars": 4333,
-   "verification": "self-reported",
-   "note": "menus 30 i/s, monde instable"
+   "stars": 4865,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
   },
   {
    "name": "ScarlettX",
    "tier": "tracked",
    "approach": "HLE emulator",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.8,
     "shaders": 0.0,
@@ -75,7 +91,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 200,
+   "stars": 241,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -83,7 +101,6 @@
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.6,
     "shaders": 0.3,
@@ -91,23 +108,23 @@
     "proven": 0.6
    },
    "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 0.5,
-    "ingame": 0,
-    "fps": 0,
+    "loads": 1.0,
+    "boots": 1.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 23,
-   "verification": "self-reported",
-   "note": "écran choix du joueur"
+   "stars": 202,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
   },
   {
    "name": "americas-recomp",
    "tier": "tracked",
    "approach": "Relinker + shader recompiler",
    "target": "GTA VI first",
-   "gtaSpecific": true,
    "groundwork": {
     "loader": 0.65,
     "shaders": 0.9,
@@ -122,39 +139,40 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 574,
+   "stars": 586,
+   "missing": true,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
    "name": "Leonida",
-   "tier": "watchlist",
+   "tier": "tracked",
    "approach": "Static recompilation",
    "target": "GTA VI only",
-   "gtaSpecific": true,
    "groundwork": {
-    "loader": 0.55,
+    "loader": 0.7,
     "shaders": 0.9,
-    "graphics": 0.45,
+    "graphics": 0.5,
     "proven": 0.0
    },
    "gta": {
-    "loads": 1,
-    "boots": 0,
-    "menu": 0,
-    "ingame": 0,
-    "fps": 0,
+    "loads": 1.0,
+    "boots": 0.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 23067,
-   "verification": "self-reported",
-   "note": "arrêté"
+   "stars": 32312,
+   "missing": true,
+   "nuked": true,
+   "verification": "self-reported"
   },
   {
    "name": "OpenScarlett",
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.65,
     "shaders": 0.45,
@@ -162,14 +180,16 @@
     "proven": 0.15
    },
    "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 0.5,
-    "ingame": 0,
-    "fps": 0,
+    "loads": 0.0,
+    "boots": 0.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 33,
+   "stars": 67,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -177,7 +197,6 @@
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.6,
     "shaders": 0.2,
@@ -192,7 +211,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 28,
+   "stars": 33,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -200,7 +221,6 @@
    "tier": "tracked",
    "approach": "Static recompilation",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.4,
     "shaders": 0.25,
@@ -208,23 +228,23 @@
     "proven": 0.0
    },
    "gta": {
-    "loads": 1,
-    "boots": 1,
+    "loads": 1.0,
+    "boots": 1.0,
     "menu": 0.5,
-    "ingame": 0,
-    "fps": 0,
+    "ingame": 0.0,
+    "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 1422,
-   "verification": "self-reported",
-   "note": "menus instables, sans preuve"
+   "stars": 1681,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
   },
   {
    "name": "AnyXboxX",
    "tier": "tracked",
    "approach": "HLE emulator",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.65,
     "shaders": 0.15,
@@ -239,7 +259,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 45,
+   "stars": 94,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -247,7 +269,6 @@
    "tier": "tracked",
    "approach": "Compatibility layer",
    "target": "Any Xbox One or Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.6,
     "shaders": 0.1,
@@ -262,30 +283,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 153,
-   "verification": "self-reported"
-  },
-  {
-   "name": "OpenScarlett (Community Edition)",
-   "tier": "tracked",
-   "approach": "Compatibility layer",
-   "target": "Any Xbox Series game",
-   "gtaSpecific": false,
-   "groundwork": {
-    "loader": 0.7,
-    "shaders": 0.15,
-    "graphics": 0.6,
-    "proven": 0.6
-   },
-   "gta": {
-    "loads": 0.0,
-    "boots": 0.0,
-    "menu": 0.0,
-    "ingame": 0.0,
-    "fps": 0.0,
-    "stability": "unknown"
-   },
-   "stars": 18,
+   "stars": 205,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -293,7 +293,6 @@
    "tier": "watchlist",
    "approach": "Relinker (PS5 route)",
    "target": "PS5 build",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.3,
     "shaders": 0.3,
@@ -308,7 +307,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 42,
+   "stars": 54,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -316,7 +317,6 @@
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
-   "gtaSpecific": true,
    "groundwork": {
     "loader": 0.25,
     "shaders": 0.05,
@@ -332,6 +332,8 @@
     "stability": "unknown"
    },
    "stars": 21,
+   "missing": true,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -339,7 +341,6 @@
    "tier": "watchlist",
    "approach": "API bridge",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.25,
     "shaders": 0.0,
@@ -355,6 +356,8 @@
     "stability": "unknown"
    },
    "stars": 1,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -362,7 +365,6 @@
    "tier": "watchlist",
    "approach": "Relinker",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.35,
     "shaders": 0.0,
@@ -377,15 +379,16 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 7,
+   "stars": 10,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
    "name": "PercyScarlett",
-   "tier": "tracked",
+   "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.3,
     "shaders": 0.15,
@@ -393,23 +396,23 @@
     "proven": 0.0
    },
    "gta": {
-    "loads": 1,
-    "boots": 0,
-    "menu": 0,
-    "ingame": 0,
-    "fps": 0,
-    "stability": "crashes often"
+    "loads": 1.0,
+    "boots": 0.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
+    "stability": "unknown"
    },
-   "stars": 15,
-   "verification": "self-reported",
-   "note": "images noires, plante"
+   "stars": 29,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
   },
   {
    "name": "GrandTheftXbox",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.15,
     "shaders": 0.0,
@@ -425,6 +428,8 @@
     "stability": "unknown"
    },
    "stars": 4,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -432,7 +437,6 @@
    "tier": "watchlist",
    "approach": "Research probes",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.05,
     "shaders": 0.0,
@@ -448,6 +452,8 @@
     "stability": "unknown"
    },
    "stars": 1,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -455,7 +461,6 @@
    "tier": "watchlist",
    "approach": "Static recompilation (DX12)",
    "target": "GTA VI",
-   "gtaSpecific": true,
    "groundwork": {
     "loader": 0.15,
     "shaders": 0.2,
@@ -470,7 +475,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 59,
+   "stars": 1,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -478,7 +485,6 @@
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.2,
     "shaders": 0.0,
@@ -494,6 +500,8 @@
     "stability": "unknown"
    },
    "stars": 1,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -501,7 +509,6 @@
    "tier": "watchlist",
    "approach": "Emulator",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.15,
     "shaders": 0.0,
@@ -517,14 +524,15 @@
     "stability": "unknown"
    },
    "stars": 2,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
-   "name": "GTA6-COMPAT-LAYER",
+   "name": "GTA6-COMPAT-LAYER (ScarlettCompat)",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI (Xbox Series)",
-   "gtaSpecific": true,
    "groundwork": {
     "loader": 0.15,
     "shaders": 0.0,
@@ -539,7 +547,9 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 2,
+   "stars": 3,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
@@ -547,7 +557,6 @@
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "Any Xbox Series game",
-   "gtaSpecific": false,
    "groundwork": {
     "loader": 0.3,
     "shaders": 0.05,
@@ -562,15 +571,40 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 9,
+   "stars": 2,
+   "missing": true,
+   "nuked": false,
+   "verification": "self-reported"
+  },
+  {
+   "name": "OpenScarlett (Community Edition)",
+   "tier": "tracked",
+   "approach": "Compatibility layer",
+   "target": "Any Xbox Series game",
+   "groundwork": {
+    "loader": 0.7,
+    "shaders": 0.15,
+    "graphics": 0.6,
+    "proven": 0.6
+   },
+   "gta": {
+    "loads": 0.0,
+    "boots": 0.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
+    "stability": "unknown"
+   },
+   "stars": 47,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
    "name": "Five Star Recomp",
-   "tier": "tracked",
+   "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
-   "gtaSpecific": true,
    "groundwork": {
     "loader": 0.35,
     "shaders": 0.2,
@@ -578,23 +612,23 @@
     "proven": 0.0
    },
    "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 0,
-    "ingame": 0,
-    "fps": 0,
-    "stability": "crashes often"
+    "loads": 1.0,
+    "boots": 1.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
+    "stability": "unknown"
    },
-   "stars": 0,
-   "verification": "self-reported",
-   "note": "vidéo d'intro puis plante"
+   "stars": 65,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
   },
   {
    "name": "G6Recomp",
    "tier": "watchlist",
    "approach": "Compatibility layer",
    "target": "GTA VI only",
-   "gtaSpecific": true,
    "groundwork": {
     "loader": 0.3,
     "shaders": 0.05,
@@ -609,150 +643,58 @@
     "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 0,
+   "stars": 5,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
-  },
-  {
-   "name": "Palmwave",
-   "tier": "tracked",
-   "approach": "Fork of XCL",
-   "target": "Any Xbox Series game",
-   "gtaSpecific": false,
-   "groundwork": {
-    "loader": 0,
-    "shaders": 0,
-    "graphics": 0,
-    "proven": 0
-   },
-   "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 0.5,
-    "ingame": 0,
-    "fps": 0,
-    "stability": "unknown"
-   },
-   "stars": 0,
-   "verification": "self-reported"
-  },
-  {
-   "name": "VIctory",
-   "tier": "tracked",
-   "approach": "Native code runner",
-   "target": "GTA VI only",
-   "gtaSpecific": true,
-   "groundwork": {
-    "loader": 0,
-    "shaders": 0,
-    "graphics": 0,
-    "proven": 0
-   },
-   "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 1,
-    "ingame": 0.5,
-    "fps": 30,
-    "stability": "unknown"
-   },
-   "stars": 4929,
-   "verification": "self-reported",
-   "note": "monde chargé, écran noir"
   },
   {
    "name": "GTA6-BootTest",
-   "tier": "tracked",
-   "approach": "Boot harness",
-   "target": "GTA VI only",
-   "gtaSpecific": true,
-   "groundwork": {
-    "loader": 0,
-    "shaders": 0,
-    "graphics": 0,
-    "proven": 0
-   },
-   "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 0.5,
-    "ingame": 0,
-    "fps": 0,
-    "stability": "unknown"
-   },
-   "stars": 0,
-   "verification": "self-reported",
-   "note": "aucune capture"
-  },
-  {
-   "name": "Holy-Interoperability",
-   "tier": "tracked",
+   "tier": "watchlist",
    "approach": "Compatibility layer",
-   "target": "Any Xbox Series game",
-   "gtaSpecific": false,
+   "target": "GTA VI only",
    "groundwork": {
-    "loader": 0,
-    "shaders": 0,
-    "graphics": 0,
-    "proven": 0
+    "loader": 0.5,
+    "shaders": 0.05,
+    "graphics": 0.2,
+    "proven": 0.0
    },
    "gta": {
-    "loads": 1,
-    "boots": 1,
-    "menu": 0,
-    "ingame": 0,
-    "fps": 0,
+    "loads": 1.0,
+    "boots": 0.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 0,
+   "stars": 35,
+   "missing": false,
+   "nuked": false,
    "verification": "self-reported"
   },
   {
    "name": "Palmetto",
-   "tier": "tracked",
+   "tier": "watchlist",
    "approach": "Static recompilation",
    "target": "GTA VI only",
-   "gtaSpecific": true,
    "groundwork": {
-    "loader": 0,
-    "shaders": 0,
-    "graphics": 0,
-    "proven": 0
+    "loader": 0.5,
+    "shaders": 0.3,
+    "graphics": 0.3,
+    "proven": 0.0
    },
    "gta": {
-    "loads": 1,
-    "boots": 0,
-    "menu": 0,
-    "ingame": 0,
-    "fps": 0,
+    "loads": 1.0,
+    "boots": 0.0,
+    "menu": 0.0,
+    "ingame": 0.0,
+    "fps": 0.0,
     "stability": "unknown"
    },
-   "stars": 0,
-   "verification": "self-reported",
-   "note": "suite de Leonida"
-  },
-  {
-   "name": "RageForge",
-   "tier": "watchlist",
-   "approach": "Unknown",
-   "target": "GTA VI",
-   "gtaSpecific": true,
-   "groundwork": {
-    "loader": 0,
-    "shaders": 0,
-    "graphics": 0,
-    "proven": 0
-   },
-   "gta": {
-    "loads": 0,
-    "boots": 0,
-    "menu": 0,
-    "ingame": 0,
-    "fps": 0,
-    "stability": "unknown"
-   },
-   "stars": 0,
-   "verification": "unverified",
-   "note": "arrêté"
+   "stars": 92,
+   "missing": false,
+   "nuked": false,
+   "verification": "self-reported"
   }
  ]
 }

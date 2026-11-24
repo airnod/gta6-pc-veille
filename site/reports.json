@@ -252,7 +252,7 @@
   {
    "date": "2026-11-23T12:42:19Z",
    "titre": "J+4 midi : pas de PC officiel, attention à une fausse fiche GTA 6 sur Steam",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur pour GTA VI sur PC. Petit détail : une fiche « GTA 6 » gratuite apparue sur Steam est un faux, signalé comme suspect par SteamDB (Notebookcheck, 22/11) ; à ne pas télécharger.",
    "points": [
     {
@@ -267,7 +267,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Seule voie sur PC : Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI mais Microsoft le garde fermé au PC ; GTA VI reste absent de GeForce Now."
     },
     {
@@ -312,7 +312,7 @@
   {
    "date": "2026-11-23T06:42:06Z",
    "titre": "J+4 matin : toujours pas de PC officiel, émulation PS5 sans test GTA VI",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur pour GTA VI sur PC. Petit détail : quelques articles relaient une cible « début 2027 » pour le portage PC, sans confirmation de Rockstar ni source nouvelle vérifiée.",
    "points": [
     {
@@ -327,7 +327,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Seule voie sur PC : Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI mais Microsoft le garde fermé au PC ; GTA VI reste absent de GeForce Now."
     },
     {
@@ -372,7 +372,7 @@
   {
    "date": "2026-11-22T18:42:01Z",
    "titre": "J+3 soir : rien de neuf côté PC officiel, AnyPS5 stable à 45 % sans jeu listé",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur pour GTA VI sur PC. Petit détail : un article italien affirme qu'AnyPS5 fait tourner cinq jeux PS5 dont Minecraft, mais il n'a pas pu être vérifié et la page officielle du projet ne liste toujours aucun jeu.",
    "points": [
     {
@@ -387,7 +387,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Seule voie sur PC : Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI mais Microsoft le garde fermé au PC ; GTA VI reste absent de GeForce Now."
     },
     {
@@ -432,7 +432,7 @@
   {
    "date": "2026-11-22T18:19:34Z",
    "titre": "J+3 soir : toujours pas de PC officiel, AnyPS5 à 45 % des fonctions système",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur pour GTA VI sur PC. Petit détail récent : la page de progression d'AnyPS5 (régénérée le 22/11) affiche 17 828 fonctions système sur 39 253 implémentées (45,42 %), sans aucun jeu listé ni test de GTA VI.",
    "points": [
     {
@@ -447,7 +447,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Jouable sur PC uniquement via Remote Play depuis sa propre PS5 ou Xbox Series, sans surcoût. Xbox Cloud Gaming propose GTA VI mais reste fermé au PC selon Microsoft ; GTA VI absent de GeForce Now."
     },
     {
@@ -492,7 +492,7 @@
   {
    "date": "2026-11-22T12:41:49Z",
    "titre": "J+3 midi : pas de PC officiel, AnyPS5 annoncerait 5 jeux PS5 jouables",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur pour GTA VI sur PC. Petit détail récent : un site rapporte qu'AnyPS5 atteint cinq jeux PS5 jouables sur PC, dont Minecraft (info non vérifiée, article inaccessible), sans GTA VI.",
    "points": [
     {
@@ -507,7 +507,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Rockstar confirme le Remote Play : jeu lancé sur sa PS5 ou Xbox Series et diffusé vers le PC, sans surcoût. Xbox Cloud Gaming (Game Pass Ultimate 20,99 €/mois, 15 h/mois) reste bloqué sur PC ; GTA VI absent de GeForce Now."
     },
     {
@@ -552,7 +552,7 @@
   {
    "date": "2026-11-22T06:42:01Z",
    "titre": "J+3 matin : toujours pas de version PC, Remote Play seule option",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur. Rockstar et Take-Two n'ont toujours rien annoncé pour le PC ; AnyPS5 revendique 100 % des 1 166 instructions shader GPU de la PS5 couvertes, sans jeu complet qui démarre.",
    "points": [
     {
@@ -567,7 +567,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Seul le Remote Play depuis sa propre PS5 ou Xbox Series permet de jouer sur PC. Xbox Cloud Gaming couvre consoles et mobiles mais Microsoft exclut le PC ; GTA VI absent de GeForce Now."
     },
     {
@@ -612,7 +612,7 @@
   {
    "date": "2026-11-21T18:42:00Z",
    "titre": "J+2 soir : toujours aucune annonce PC, ventes record côté consoles",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur. GTA VI aurait généré environ 1,84 milliard de dollars dès le jour de sortie (estimation relayée par Fox 5), sans qu'aucune version PC ne soit annoncée.",
    "points": [
     {
@@ -627,7 +627,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Seul le Remote Play depuis sa propre PS5 ou Xbox Series permet de jouer sur PC. Xbox Cloud Gaming couvre consoles et mobiles mais pas le PC, et GTA VI reste absent de GeForce Now."
     },
     {
@@ -676,7 +676,7 @@
   {
    "date": "2026-11-21T12:42:18Z",
    "titre": "J+2 : la « page Steam » GTA VI jugée suspecte, toujours rien d'officiel sur PC",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur. PCGamesN et Softonic mettent en garde contre la page Steam « GTA 6 » repérée le 20/11 : elle n'est pas présentée comme officielle et Rockstar n'a rien annoncé.",
    "points": [
     {
@@ -691,7 +691,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Sur PC, seul le Remote Play depuis sa propre PS5 ou Xbox Series permet de jouer. Xbox Cloud Gaming propose GTA VI sur consoles et mobiles mais pas sur PC ; le jeu reste absent de GeForce Now."
     },
     {
@@ -736,7 +736,7 @@
   {
    "date": "2026-11-21T06:41:53Z",
    "titre": "J+2 : une page Steam GTA VI signalée, mais rien d'officiel côté PC",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur. Seul détail nouveau : ixbt.games signale le 20/11 l'apparition d'une page « Grand Theft Auto VI » sur Steam, tout en prévenant qu'il est trop tôt pour se réjouir ; aucune confirmation de Rockstar.",
    "points": [
     {
@@ -751,7 +751,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Sur PC, seul le Remote Play depuis sa PS5 ou Xbox Series fonctionne. Xbox Cloud Gaming propose GTA VI sur consoles et mobiles mais exclut le PC ; absent de GeForce Now."
     },
     {
@@ -796,7 +796,7 @@
   {
    "date": "2026-11-20T18:41:48Z",
    "titre": "J+1 soir : rien de neuf côté PC, Remote Play reste la seule voie",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur depuis le rapport de 18 h. Les articles du jour (allthings.how, Hollywood Life) recyclent les pistes connues : portage PC attendu début 2027 au plus tôt, 2028 selon d'autres.",
    "points": [
     {
@@ -811,7 +811,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Jouable sur PC uniquement via Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI sur console et appareils mobiles, mais Microsoft exclut toujours le PC ; absent de GeForce Now."
     },
     {
@@ -856,7 +856,7 @@
   {
    "date": "2026-11-20T18:00:34Z",
    "titre": "J+1 : toujours pas de version PC, AnyPS5 figé à 44,65 %",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "Pas de changement majeur. Un blog affirme qu'AnyPS5 fait tourner cinq jeux PS5 légers (dont Minecraft), mais la page officielle n'affiche aucune liste de jeux et sa progression reste inchangée.",
    "points": [
     {
@@ -871,7 +871,7 @@
     },
     {
      "categorie": "Remote Play / Cloud",
-     "statut": "partiel",
+     "statut": "non",
      "texte": "Jouable sur PC uniquement via Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI mais Microsoft exclut le PC ; absent de GeForce Now."
     },
     {
@@ -916,7 +916,7 @@
   {
    "date": "2026-11-20T10:00:00Z",
    "titre": "J+1 : sorti sur consoles, toujours rien sur PC",
-   "statut": "partiel",
+   "statut": "non",
    "resume": "GTA VI est sorti le 19/11 sur PS5 et Xbox Series uniquement. Aucune version PC annoncée. Le seul moyen officiel d'y jouer sur un écran de PC : le Remote Play depuis sa propre console.",
    "points": [
     {
