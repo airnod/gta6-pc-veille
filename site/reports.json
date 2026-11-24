@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-24T12:41:58Z",
+ "maj": "2026-11-24T16:42:21Z",
  "reports": [
+  {
+   "date": "2026-11-24T16:42:21Z",
+   "titre": "J+5 après-midi : CGBJ reste seul « en jeu », pas de nouveau palier ni de version officielle",
+   "statut": "partiel",
+   "resume": "Aucune avancée chiffrée depuis 12 h 40 UTC : CGBJ demeure le seul projet « en jeu » (monde sans éclairage, très lent), VIctory et XCL restent bloqués à l'entrée du monde. La presse (Rom-Game, StupidDope, TechStory) reprend l'info CGBJ ; Windows Forum alerte sur de faux téléchargements piégés.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 24/11 à 16 h 40 UTC, ni date, ni config, ni page Steam/Epic : Take-Two renvoie toujours aux annonces de Rockstar (TweakTown). Une rumeur d'octobre évoquant le 1er trimestre 2027 n'a pas été confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "CGBJ mène à 72 % (palier « En jeu », vérifié par PortWatch seul, code privé). Suivent VIctory 67 % (en jeu partiel 0,8) et XCL 62,5 % (en jeu partiel 0,5), d'après le dernier relevé PortWatch synchronisé (7 h 34 UTC) ; Xbox2Windows 47,5 %."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon Rom-Game (24/11), VIctory tourne à 30 i/s aux menus mais met ~50 s à charger le monde et 0,5 à 1,8 s par image en mission, avec risque de gel GPU ; TuxBox et Xbox2Windows en sont à la 1re image ou au menu partiel. Tout reste auto-déclaré hors CGBJ."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 24/11 : SharpEmu, KytyPS5 (menus de GTA V) et AnyPS5 n'ont publié aucun test de GTA VI."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "La build Xbox fuitée le 23/11 reste non authentifiée ; Rom-Game dit que Take-Two multiplie les demandes de retrait, sans avis DMCA public visant XCL ou CGBJ. Windows Forum signale de faux portages chargés de malwares : toute offre de « GTA VI PC » prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Rom-Game – GTA VI sur PC : CGBJ atteint le jeu, XCL et VIctory au menu principal",
+     "url": "https://www.rom-game.fr/news/7413-gta-vi-pc-portage.html"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "TechStory – Un projet GTA 6 PC atteindrait le rendu en jeu",
+     "url": "https://techstory.in/gta-6-pc-project-reportedly-reaches-in-game-rendering/"
+    },
+    {
+     "titre": "Windows Forum – Leonida disparaît, de faux téléchargements propagent des malwares",
+     "url": "https://windowsforum.com/news/gta-6-pc-port-rumors-project-leonida-goes-dark-as-fake-downloads-spread-malware.453884/"
+    },
+    {
+     "titre": "TweakTown – Les infos PC de GTA 6 viendront de Rockstar, confirme Take-Two",
+     "url": "https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html"
+    }
+   ]
+  },
   {
    "date": "2026-11-24T12:41:58Z",
    "titre": "J+5 midi : CGBJ entre « en jeu » dans GTA VI sur PC, monde sans éclairage et très lent",
