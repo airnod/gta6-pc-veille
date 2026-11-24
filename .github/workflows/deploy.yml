@@ -29,8 +29,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Valider reports.json
-        run: python3 scripts/validate_reports.py site/reports.json
+      - name: Valider les données
+        run: |
+          python3 scripts/validate_reports.py site/reports.json
+          python3 scripts/validate_tracker.py site/tracker.json
 
       - uses: actions/configure-pages@v5
 

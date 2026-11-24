@@ -83,6 +83,81 @@
   }
   load(); setInterval(load, 10 * 60 * 1000);
 
+
+  // ---- course au portage (données PortWatch VI, barème inspiré de leur méthode) ----
+  const STAB = { stable: 1, playable: 0.66, "crashes often": 0.33, crashes: 0.33 };
+  const APPROCHES = { "Compatibility layer": "Couche de compatibilité", "Compatibility runtime": "Runtime de compatibilité",
+    "HLE emulator": "Émulateur HLE", "Emulator": "Émulateur", "Static recompilation": "Recompilation statique",
+    "Static recompilation (DX12)": "Recompilation statique (DX12)", "Relinker": "Relinker", "Relinker (PS5 route)": "Relinker (version PS5)",
+    "Relinker + shader recompiler": "Relinker + recompilation des shaders", "API bridge": "Pont d'API", "Research probes": "Recherches" };
+  const num = (v) => { const n = Number(v); return Number.isFinite(n) ? Math.min(1, Math.max(0, n)) : 0; };
+  function score(e){
+    const g = e.groundwork || {}, t = e.gta || {};
+    const gw = (num(g.loader) + num(g.shaders) + num(g.graphics) + num(g.proven)) / 4 * 25;
+    const ms = (num(t.loads) + num(t.boots) + num(t.menu) + num(t.ingame)) * 11.25;
+    const fps = num((Number(t.fps) || 0) / 30) * 15;
+    const st = (STAB[String(t.stability || "").toLowerCase()] || 0) * 15;
+    return Math.round((gw + ms + (num(t.ingame) > 0 ? fps + st : 0)) * 10) / 10;
+  }
+  const JALONS = [["loads", "Charge"], ["boots", "Démarre"], ["menu", "Menu"], ["ingame", "En jeu"]];
+  function bestMilestone(list){
+    let best = "Aucun";
+    JALONS.forEach(([k, l]) => { if (list.some(e => num((e.gta || {})[k]) > 0)) best = l + (list.some(e => num((e.gta || {})[k]) >= 1) ? "" : " (partiel)"); });
+    return best;
+  }
+  let raceData = [], raceFilter = "all";
+  function renderRace(){
+    const host = $("racelist"); host.replaceChildren();
+    let list = raceData.filter(e => raceFilter === "watch" ? e.tier === "watchlist" : e.tier !== "watchlist");
+    if (raceFilter === "gta") list = raceData.filter(e => e.gtaSpecific);
+    list.sort((a, b) => b._s - a._s || (b.stars || 0) - (a.stars || 0));
+    if (!list.length){ host.append(el("div", "empty", "Aucun projet dans cette catégorie.")); return; }
+    list.forEach(e => {
+      const row = el("div", "row");
+      const left = el("div"); const nm = el("div", "nm", e.name || "?");
+      if (e.gtaSpecific) nm.append(el("span", "tag", "GTA VI"));
+      if (e.verification === "self-reported") nm.append(el("span", "tag", "auto-déclaré"));
+      left.append(nm, el("div", "sub2", (APPROCHES[e.approach] || e.approach || "") + " · " + (e.gtaSpecific ? "GTA VI" : "tout jeu Xbox Series") + " · ★ " + (e.stars || 0).toLocaleString("fr-FR")));
+      const bars = el("div", "bars"); const pb = el("div", "pbar"); const fill = el("i"); fill.style.width = e._s + "%"; pb.append(fill, el("span", "gw"));
+      const steps = el("div", "steps");
+      JALONS.forEach(([k, l]) => { const v = num((e.gta || {})[k]); steps.append(el("em", v >= 1 ? "full" : v > 0 ? "half" : "", l)); });
+      bars.append(pb, steps);
+      row.append(left, bars, el("div", "pct", e._s.toFixed(1) + " %"));
+      host.append(row);
+    });
+  }
+  document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+    raceFilter = b.dataset.f;
+    document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    renderRace();
+  }));
+  async function loadRace(){
+    try {
+      const r = await fetch("tracker.json?t=" + Math.floor(Date.now() / 6e5), { cache: "no-store" });
+      if (!r.ok) throw new Error(r.status);
+      const j = await r.json();
+      raceData = (Array.isArray(j.efforts) ? j.efforts : []).map(e => Object.assign({}, e, { _s: score(e) }));
+      const tracked = raceData.filter(e => e.tier !== "watchlist");
+      const sorted = tracked.map(e => e._s).sort((a, b) => b - a);
+      const best = sorted[0] || 0, top3 = sorted.slice(0, 3);
+      $("ovpct").textContent = best.toFixed(1) + " %"; $("ovbar").style.width = best + "%";
+      const booted = raceData.some(e => num((e.gta || {}).boots) > 0);
+      $("t-boot").textContent = booted ? "Oui" : "Pas encore";
+      $("t-mile").textContent = bestMilestone(raceData);
+      $("t-top3").textContent = top3.length ? (top3.reduce((a, b) => a + b, 0) / top3.length).toFixed(1) + " %" : "–";
+      $("t-count").textContent = tracked.length + " (+" + (raceData.length - tracked.length) + ")";
+      const note = $("racenote"); note.replaceChildren();
+      note.append(el("span", null, "Progression = projet le plus avancé. Les 25 premiers % = travail préparatoire (chargeur, shaders, rendu, preuve sur d'autres jeux) ; au-delà, seuls de vrais jalons GTA VI comptent (charge, démarre, menu, en jeu), puis FPS et stabilité. Jalon partiel = moitié. Données : "));
+      const src = j.source && safeUrl(j.source.url);
+      if (src){ const a = el("a", null, (j.source && j.source.name) || "source"); a.href = src; a.target = "_blank"; a.rel = "noopener noreferrer"; note.append(a); }
+      note.append(el("span", null, " · mise à jour " + fmt(j.updated) + (j.leak && j.leak.status ? " · Fuite : " + j.leak.status : "") + ". Aucun lien vers les projets ni vers la fuite."));
+      renderRace();
+    } catch (e) {
+      $("racelist").replaceChildren(el("div", "empty", "Impossible de charger la course pour le moment."));
+    }
+  }
+  loadRace(); setInterval(loadRace, 10 * 60 * 1000);
+
   // ---- easter egg ----
   const box = $("eggbox"), img = $("eggimg");
   $("egg").addEventListener("click", () => { if (!img.src) img.src = "chats.jpg"; box.hidden = false; });

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GTA VI sur PC — Veille & compte à rebours</title>
@@ -56,6 +56,31 @@
   .eggbox[hidden]{display:none}
   .eggbox img{max-width:min(1100px,100%);max-height:85vh;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
   .eggclose{color:var(--mute);font-size:12px;font-family:"JetBrains Mono",monospace}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+  .tile{background:#110e19;border:1px solid var(--line);border-radius:10px;padding:12px}
+  .tile b{display:block;font-family:"JetBrains Mono",monospace;font-size:22px}
+  .tile span{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
+  .big{display:flex;align-items:center;gap:14px;margin-top:6px}
+  .big .pbar{flex:1;height:14px}
+  .big b{font-family:"JetBrains Mono",monospace;font-size:28px}
+  .pbar{position:relative;height:8px;border-radius:99px;background:#221d30;overflow:hidden}
+  .pbar i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--pink),var(--orange))}
+  .pbar .gw{position:absolute;top:0;bottom:0;left:25%;width:1px;background:rgba(255,255,255,.35)}
+  .filters{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 8px}
+  .filters button{background:#110e19;color:var(--txt);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+  .filters button[aria-pressed="true"]{border-color:var(--teal);color:var(--teal)}
+  .race{display:flex;flex-direction:column;gap:8px}
+  .row{display:grid;grid-template-columns:1.4fr 2fr auto;gap:12px;align-items:center;background:#110e19;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .row .nm{font-weight:700}
+  .row .sub2{font-size:12px;color:var(--mute)}
+  .row .pct{font-family:"JetBrains Mono",monospace;font-size:14px;text-align:right;min-width:52px}
+  .steps{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+  .steps em{font-style:normal;font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+  .steps em.half{border-color:var(--warn);color:var(--warn)}
+  .steps em.full{border-color:var(--ok);color:var(--ok)}
+  .tag{font-size:10px;padding:1px 6px;border-radius:4px;background:#2a2438;color:#d6d0e2;margin-left:6px;vertical-align:middle}
+  .note{font-size:12px;color:var(--mute);margin-top:12px}
+  @media (max-width:620px){.row{grid-template-columns:1fr auto}.row .bars{grid-column:1 / -1}}
   @media (max-width:520px){.count{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -74,6 +99,26 @@
     <div class="bar"><i id="bar"></i></div>
     <div class="barlbl"><span>19/11/2026</span><span id="pct">0 %</span><span>19/02/2027</span></div>
   </header>
+
+  <section>
+    <h2>La course au portage</h2>
+    <div class="card" id="race">
+      <div class="big"><div class="pbar"><i id="ovbar"></i><span class="gw"></span></div><b id="ovpct">–</b></div>
+      <div class="tiles">
+        <div class="tile"><b id="t-boot">–</b><span>GTA VI démarré ?</span></div>
+        <div class="tile"><b id="t-mile">–</b><span>Meilleur jalon</span></div>
+        <div class="tile"><b id="t-top3">–</b><span>Moyenne top 3</span></div>
+        <div class="tile"><b id="t-count">–</b><span>Projets suivis</span></div>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button type="button" data-f="all" aria-pressed="true">Tous les projets suivis</button>
+        <button type="button" data-f="gta" aria-pressed="false">Spécifiques GTA VI</button>
+        <button type="button" data-f="watch" aria-pressed="false">En observation</button>
+      </div>
+      <div class="race" id="racelist"><div class="empty">Chargement…</div></div>
+      <p class="note" id="racenote"></p>
+    </div>
+  </section>
 
   <section>
     <h2>Dernier rapport</h2>
