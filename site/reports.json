@@ -1,6 +1,70 @@
 {
- "maj": "2026-11-23T18:41:59Z",
+ "maj": "2026-11-24T05:43:33Z",
  "reports": [
+  {
+   "date": "2026-11-24T05:43:33Z",
+   "titre": "J+5 matin : pas de PC officiel, aucun portage n'a encore démarré GTA VI malgré l'exécutable publié",
+   "statut": "partiel",
+   "resume": "Pas de changement majeur depuis hier soir : PortWatch n'a pas bougé depuis le 23/11 à 16 h 52 UTC. Le détail le plus récent reste la publication annoncée de l'exécutable manquant le 23/11 (non vérifiée), sans qu'aucun projet n'ait démarré le jeu.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 24/11 à 5 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni date, ni config, ni page Steam/Epic. PC Gamer estime qu'il faudra sans doute attendre 2028 ; la piste « début 2027 » reste non confirmée."
+    },
+    {
+     "categorie": "Portages & PortWatch",
+     "statut": "non",
+     "texte": "PortWatch suit 26 projets (12 suivis, 14 en observation), tous auto-déclarés. Leonida (recompilation statique, 23 067 étoiles) reste seul au jalon « chargement » partiel (0,5) ; aucun n'a démarré GTA VI (boot, menu, en jeu à 0)."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "non",
+     "texte": "XCL mène le socle (chargeur 0,9, shaders 0,9, graphismes 0,85) après avoir lancé ses premiers jeux Xbox commerciaux sur PC le 22/11, selon PortWatch ; xbox-emulator (1 540 étoiles) suit. Aucun test GTA VI concluant."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Le développeur d'AnyPS5 a été suspendu sur X le 22/11, sans preuve d'une action de Sony ou Rockstar (PortWatch). SharpEmu annonce six jeux PS5 à 60 i/s et approche Demon's Souls, KytyPS5 reste aux menus de GTA V ; GTA VI non testé."
+    },
+    {
+     "categorie": "Remote Play / Cloud",
+     "statut": "partiel",
+     "texte": "Seule voie sur PC : le Remote Play depuis sa propre PS5 ou Xbox Series. Xbox Cloud Gaming propose GTA VI sur consoles et Xbox One mais pas sur PC ; absent de GeForce Now."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Cyberleek, qui avait diffusé une build Xbox de 209 Go sans exécutable le 21/11, dit avoir publié ce fichier le 23/11 et réclame des cryptos ; rien n'est authentifié. Take-Two attaque des portages de GTA V sur GitHub (18/11), le hacker de 2022 a plaidé coupable, et toute offre de « GTA VI PC » à télécharger est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Tracker des portages GTA VI",
+     "url": "https://portwatch-vi.xyz/"
+    },
+    {
+     "titre": "PC Gamer – Les joueurs PC n'auront sans doute pas GTA 6 avant 2028",
+     "url": "https://www.pcgamer.com/games/grand-theft-auto/well-pc-gamers-time-to-make-peace-with-the-fact-that-we-probably-wont-be-playing-gta-6-until-like-2028-unless-we-cave-in-and-buy-the-console-version"
+    },
+    {
+     "titre": "Twisted Voxel – Build Xbox de 209 Go publiée sans exécutable",
+     "url": "https://twistedvoxel.com/gta-vi-xbox-build-leak/"
+    },
+    {
+     "titre": "iTechPost – Le hacker de GTA 6 plaide coupable",
+     "url": "https://www.itechpost.com/articles/237825/20261118/gta-6-hacker-arion-kurtaj-pleads-guilty-major-gameplay-leak-shocking-case.htm"
+    },
+    {
+     "titre": "Notebookcheck – SharpEmu fait tourner six jeux à 60 i/s",
+     "url": "https://www.notebookcheck.net/PS5-emulation-hits-new-milestone-SharpEmu-now-runs-six-games-at-60-FPS.1409228.0.html"
+    },
+    {
+     "titre": "Dexerto – GTA 6 sur Xbox Cloud Gaming, mais pas pour les joueurs PC",
+     "url": "https://www.dexerto.com/gta/gta-6-confirms-xbox-cloud-gaming-support-but-pc-players-face-a-catch-3427015/"
+    }
+   ]
+  },
   {
    "date": "2026-11-23T18:41:59Z",
    "titre": "J+4 soir : toujours pas de GTA VI sur PC, rien de neuf côté émulation",
