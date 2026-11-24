@@ -177,6 +177,17 @@
       const leader = ranked[0], top = ranked.slice(0, 3);
       const best = leader ? leader._s.score : 0;
       $("ovpct").textContent = best + " %"; $("ovbar").style.width = best + "%";
+      // Étapes principales sous la barre : atteintes en couleur, la suivante entourée
+      const track = $("ovtrack"); track.querySelectorAll(".tk").forEach(t => t.remove());
+      MILESTONES.slice(1, -1).forEach(m => { const t = el("span", "tk"); t.style.left = m[2] + "%"; track.append(t); });
+      const lidx = leader ? MILESTONES.findIndex(m => m[0] === leader._s.reached) : 0;
+      const labels = $("ovlabels"); labels.replaceChildren();
+      MILESTONES.forEach((m, i) => {
+        const d = el("div", "ml" + (i <= lidx ? " done" : i === lidx + 1 ? " next" : ""));
+        d.style.left = m[2] + "%";
+        d.append(el("b", null, m[2] + " %"), el("span", null, m[1]));
+        labels.append(d);
+      });
       $("ovleader").textContent = leader ? "En tête : " + leader.name + " · a atteint « " + label(leader._s.reached) + " »" : "";
       const furthest = ranked.reduce((m, e) => Math.max(m, MILESTONES.findIndex(x => x[0] === e._s.reached)), 0);
       $("t-mile").textContent = MILESTONES[furthest][1];
