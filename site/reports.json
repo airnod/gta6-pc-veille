@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-25T08:42:14Z",
+ "maj": "2026-11-25T12:42:07Z",
  "reports": [
+  {
+   "date": "2026-11-25T12:42:07Z",
+   "titre": "J+6 midi : des builds privés franchissent le prologue de Lucia et atteignent « Gone Fishing », sans changement de score",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 8 h 40 UTC : PortWatch rapporte (25/11) que plusieurs builds PC privés, dérivés de VIctory, passent le prologue et arrivent à la 1re mission de Jason, « Gone Fishing », mais non confirmé et sans effet sur le classement. Sur X, un projet nommé Zettrox est présenté comme le premier à finir le prologue (auto-déclaré).",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 25/11 à 12 h 40 UTC, toujours aucune annonce, date, configuration ni page Steam/Epic de Rockstar ou Take-Two. Les estimations « début 2027 » de la presse restent des spéculations."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory en tête à 67 % (En jeu partiel 0,8), puis XCL 62,5 % (En jeu partiel 0,5) et Xbox2Windows 47,5 % (Menu partiel 0,5). PortWatch n'applique aucun changement de score tant que les nouveaux builds privés ne sont pas identifiés."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon PortWatch (25/11), des builds privés basés sur un fork public de VIctory passent le prologue de Lucia et entrent dans « Gone Fishing » : rendu du monde très dégradé, véhicules quasi inutilisables (bateau impossible à diriger), carte du menu pause parfois fonctionnelle, aucun chiffre d'i/s. Un post X (Furkan Yıldırım) dit la même chose de Zettrox : tout reste auto-déclaré et non reproduit."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 25/11 : aucun test de GTA VI sur KytyPS5, SharpEmu ou AnyPS5 ; les deux premiers en restent aux menus de GTA V (jusqu'à 60 i/s avant plantage) et AnyPS5 n'a pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Pas de nouvel avis DMCA public depuis celui du 24/11 visant Leonida et 3 007 forks ; VIctory et XCL ne sont pas visés, Rockstar ne commente toujours pas la build Xbox fuitée. Les faux « builds jouables » piégés (malwares) circulent toujours : toute offre de GTA VI PC prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Des builds GTA VI passent le prologue de Lucia et atteignent la 1re mission de Jason",
+     "url": "https://portwatch-vi.xyz/news/2026-11-25-prologue-gone-fishing"
+    },
+    {
+     "titre": "PortWatch VI – Classement des portages PC",
+     "url": "https://portwatch-vi.xyz/"
+    },
+    {
+     "titre": "X – Furkan Yıldırım : Zettrox présenté comme premier build à finir le prologue",
+     "url": "https://x.com/furkandev/status/2125409046656164310"
+    },
+    {
+     "titre": "Cybernews – De faux builds GTA 6 pré-sortie diffusent des malwares",
+     "url": "https://cybernews.com/security/gta-six-game-build-fake-leak/"
+    }
+   ]
+  },
   {
    "date": "2026-11-25T08:42:14Z",
    "titre": "J+6 matin : Take-Two lance son premier DMCA contre un portage GTA VI (Leonida + 3 007 forks), aucun nouveau palier",
