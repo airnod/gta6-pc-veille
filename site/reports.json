@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-25T00:42:21Z",
+ "maj": "2026-11-25T04:41:59Z",
  "reports": [
+  {
+   "date": "2026-11-25T04:41:59Z",
+   "titre": "J+6 matin : aucun nouveau palier ; GTA VI PC Race place aussi AnyXboxX « en jeu » à ~2,4 i/s",
+   "statut": "partiel",
+   "resume": "Rien de neuf côté PortWatch depuis 0 h 40 UTC : pas d'article daté du 25/11 et flux synchronisé toujours figé au 24/11 à 7 h 34 UTC. Le tracker GTA VI PC Race (relevé du 24/11, 17 h 14 UTC) compte trois projets « en jeu » (CGBJ, VIctory, AnyXboxX), tous très loin du jouable.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 25/11 à 4 h 40 UTC, aucune date, configuration ni page Steam/Epic : Strauss Zelnick renvoie toujours aux futures annonces de Rockstar. La piste « mars 2027 » reste une interprétation de presse, non confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory 67 % (en jeu partiel 0,8), XCL 62,5 % (en jeu partiel 0,5), Xbox2Windows 47,5 % (menu partiel). Le site PortWatch affichait omonkey (76 %) et CGBJ (72 %) devant, absents du flux."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon GTA VI PC Race (24/11), AnyXboxX tourne en jeu à ~2,4 i/s sur RTX 4070 Super (branche locale non publiée, ~170 shaders non traduits) ; VIctory tient ~8 min dans le monde sous Proton, mais à 0,5–1,8 s par image ; XCL reste aux menus à 30 i/s. Tout est auto-déclaré."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Aucun test de GTA VI au 25/11 : KytyPS5 et SharpEmu en restent aux menus de GTA V (jusqu'à 60 i/s avant plantage), AnyPS5 n'a toujours pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "La build Xbox fuitée le 23/11 n'est toujours pas authentifiée et Rockstar se tait ; aucun nouvel avis DMCA public visant les portages. Malwarebytes signale de faux sites « démo GTA 6 » qui installent un voleur de données : toute offre de GTA VI PC prêt à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GTA VI PC Race – Suivi en direct des portages PC",
+     "url": "https://vuyp.github.io/gta6-pc-race/"
+    },
+    {
+     "titre": "PortWatch VI – XCL annonce 30 i/s dans GTA VI sans dire s'il dépasse les menus",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-xcl-30fps-in-game"
+    },
+    {
+     "titre": "Pro-Gamer – Le build d'omonkey fait tourner la prison de Lucia à 5 i/s",
+     "url": "https://pro-gamer.gg/gta-6-pc-omonkey-victory-build-lucia-prison-5-fps-windows/"
+    },
+    {
+     "titre": "PC Gamer – Zelnick : Rockstar fera d'autres annonces en temps voulu",
+     "url": "https://pcgamer.com/games/grand-theft-auto/asked-whether-grand-theft-auto-6-will-come-to-pc-take-two-ceo-strauss-zelnick-says-rockstar-will-make-more-announcements-in-due-time"
+    },
+    {
+     "titre": "Malwarebytes – De faux sites de démo GTA 6 diffusent un infostealer",
+     "url": "https://www.malwarebytes.com/?p=456116"
+    }
+   ]
+  },
   {
    "date": "2026-11-25T00:42:21Z",
    "statut": "partiel",
