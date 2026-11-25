@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-25T16:42:27Z",
+ "maj": "2026-11-25T20:42:29Z",
  "reports": [
+  {
+   "date": "2026-11-25T20:42:29Z",
+   "titre": "J+6 soir : un build privé « tout AMD » (Belobug) jouerait des missions dans un monde proche de la console, mais à ~3 i/s",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 16 h 40 UTC : PortWatch (25/11, 11 h 02 UTC) dit avoir vu le build privé Belobug sur PC tout AMD, avec un monde ouvert proche de la version console et des missions jouables, mais à environ 3 i/s. Classement PortWatch toujours figé au 24/11, aucune nouvelle annonce officielle ni nouveau DMCA.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 25/11 à 20 h 40 UTC, toujours aucune annonce, date, configuration ni page Steam/Epic de Rockstar ou Take-Two. Strauss Zelnick répète que les consoles passent d'abord et que Rockstar fera des annonces « en temps voulu »."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory en tête à 67 % (En jeu partiel 0,8), puis XCL 62,5 % (En jeu partiel 0,5) et Xbox2Windows 47,5 % (Menu partiel 0,5) ; TuxBox et Five Star Recomp suivent à 40 % (1re image). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon PortWatch (25/11, 11 h 02 UTC), Belobug, un build privé sur config AMD, affiche un monde ouvert proche de la console et enchaîne des missions, mais tourne à ~3 i/s ; ZETTROX ne planterait pas du prologue à « Gone Fishing » (25/11, 3 h UTC). Ce sont des affirmations, aucune n'est reproduite de façon indépendante ni comptée au classement."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 25/11 au soir : aucun test de GTA VI sur KytyPS5, SharpEmu ou AnyPS5 ; les deux premiers en restent aux menus de GTA V (jusqu'à 60 i/s avant plantage), AnyPS5 n'a pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Pas de nouvel avis DMCA depuis celui du 24/11 contre Leonida (3 007 dépôts) ; Decrypt et TweakTown confirment que Take-Two invoque l'interdiction de rétro-ingénierie des conditions de Rockstar, qui ne commente pas la build Xbox fuitée (non authentifiée). Toute offre de « GTA VI PC prêt à jouer » est une arnaque, parfois piégée pour vider des comptes."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC (dont le build AMD de Belobug, 25/11)",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Classement des portages PC",
+     "url": "https://portwatch-vi.xyz/"
+    },
+    {
+     "titre": "Decrypt – Take-Two vise le portage Leonida par DMCA, 3 007 dépôts supprimés",
+     "url": "https://decrypt.co/383935/take-two-hits-gta-6-pc-port-leonida-with-dmca-taking-down-3007-github-repos"
+    },
+    {
+     "titre": "PC Gamer – Zelnick : Rockstar fera des annonces PC « en temps voulu »",
+     "url": "https://pcgamer.com/games/grand-theft-auto/asked-whether-grand-theft-auto-6-will-come-to-pc-take-two-ceo-strauss-zelnick-says-rockstar-will-make-more-announcements-in-due-time"
+    },
+    {
+     "titre": "PC Games Hardware – Émulateurs PS5 : la course à GTA 6 sur PC",
+     "url": "https://www.pcgameshardware.de/Playstation-5-Konsolen-265878/News/PS5-Emulator-SharpEmu-Dreaming-Sarah-GTA-6-1548009/"
+    }
+   ]
+  },
   {
    "date": "2026-11-25T16:42:27Z",
    "titre": "J+6 fin d'après-midi : Take-Two justifie son DMCA par l'interdiction de rétro-ingénierie, aucun nouveau palier",
