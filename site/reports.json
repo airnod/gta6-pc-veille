@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-25T12:42:07Z",
+ "maj": "2026-11-25T16:42:27Z",
  "reports": [
+  {
+   "date": "2026-11-25T16:42:27Z",
+   "titre": "J+6 fin d'après-midi : Take-Two justifie son DMCA par l'interdiction de rétro-ingénierie, aucun nouveau palier",
+   "statut": "partiel",
+   "resume": "Peu de neuf depuis 12 h 40 UTC : TweakTown (25/11, 7 h UTC) détaille l'argumentaire de Take-Two contre Leonida (article 2.3 des conditions de Rockstar, « apportez vos fichiers » jugé « intentionnellement trompeur »). Aucun nouvel article PortWatch et flux de classement toujours figé au 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 25/11 à 16 h 40 UTC, toujours aucune annonce, date, configuration ni page Steam/Epic de Rockstar ou Take-Two. Les pistes « début 2027 » ou « 2028 » de la presse restent des spéculations."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory en tête à 67 % (En jeu partiel 0,8), puis XCL 62,5 % (En jeu partiel 0,5) et Xbox2Windows 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon TweakTown (25/11), VIctory charge le monde et affiche l'intro de la 1re mission, mais à 1–2 s par image ; les builds privés qui atteindraient « Gone Fishing » (PortWatch, 25/11) restent auto-déclarés et non reproduits. Aucun chiffre d'i/s nouveau."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 25/11 : aucun test de GTA VI sur KytyPS5, SharpEmu ou AnyPS5 ; les deux premiers en restent aux menus de GTA V (jusqu'à 60 i/s avant plantage), AnyPS5 n'a pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Take-Two a confirmé être à l'origine du retrait de Leonida (3 007 dépôts) en invoquant l'article 2.3 des conditions de Rockstar, qui interdit décompilation et rétro-ingénierie ; Rockstar ne commente toujours pas et la build fuitée n'est pas authentifiée. Toute offre de « GTA VI PC prêt à jouer » ou fiche Steam suspecte est une arnaque, souvent piégée par des malwares."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "TweakTown – Retrait du portage GTA 6 confirmé : Take-Two invoque l'interdiction de rétro-ingénierie de Rockstar",
+     "url": "https://www.tweaktown.com/news/114877/gta-6-pc-port-takedown-confirmed-take-two-cites-rockstars-ban-on-reverse-engineering/index.html"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Classement des portages PC",
+     "url": "https://portwatch-vi.xyz/"
+    },
+    {
+     "titre": "Tom's Hardware – Un émulateur PS5 fait tourner GTA V jusqu'à 60 i/s avant de planter",
+     "url": "https://www.tomshardware.com/video-games/pc-gaming/ps5-emulator-can-now-run-the-console-version-of-gta-v-at-up-to-60-fps-on-pc-but-quickly-crashes-as-tweakers-continue-to-optimize-ps5-emulation-advancing-at-an-astronomical-pace-leading-up-to-gta-vi-launch"
+    }
+   ]
+  },
   {
    "date": "2026-11-25T12:42:07Z",
    "titre": "J+6 midi : des builds privés franchissent le prologue de Lucia et atteignent « Gone Fishing », sans changement de score",
