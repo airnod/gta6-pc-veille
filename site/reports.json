@@ -1,6 +1,53 @@
 {
- "maj": "2026-11-25T04:41:59Z",
+ "maj": "2026-11-25T08:42:14Z",
  "reports": [
+  {
+   "date": "2026-11-25T08:42:14Z",
+   "titre": "J+6 matin : Take-Two lance son premier DMCA contre un portage GTA VI (Leonida + 3 007 forks), aucun nouveau palier",
+   "statut": "partiel",
+   "resume": "Nouveau par rapport aux derniers rapports : PortWatch documente le premier avis DMCA de Take-Two visant un portage GTA VI, publié le 24/11 sur GitHub (Leonida et 3 007 forks désactivés). Côté portages, aucun article PortWatch daté du 25/11 et aucun nouveau palier.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 25/11 à 8 h 40 UTC, toujours aucune date, configuration ni page Steam/Epic de Rockstar ou Take-Two. Les dates PC « début/mars 2027 » relayées par la presse restent des spéculations."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory en tête à 67 % (en jeu partiel 0,8), puis XCL 62,5 % (en jeu partiel 0,5) et Xbox2Windows 47,5 % (menu partiel 0,5). Le site PortWatch (données du 24/11, 20 h 10 UTC) cite aussi omonkey 76 % et CGBJ 72 % « en jeu », non classés car builds privés."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Pas de progrès chiffré nouveau au 25/11 : omonkey reste à ~5 i/s dans la prison, CGBJ en jeu sans éclairage, XCL bute sur un watchdog GPU après le chargement du monde (rapports de testeurs). Tout reste auto-déclaré, rien n'est reproduit de façon indépendante."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Aucun test de GTA VI signalé au 25/11 : KytyPS5 et SharpEmu en restent aux menus de GTA V, AnyPS5 n'a pas de version publique et son développeur reste suspendu sur X depuis le 22/11."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Le 24/11, Take-Two a publié un avis DMCA contre Leonida : GitHub l'a appliqué à tout le réseau, soit 3 007 dépôts ; l'éditeur estime que « fournir ses propres fichiers » implique forcément la build Xbox fuitée. VIctory et XCL ne sont pas visés pour l'instant ; toute offre de « GTA VI PC » prêt à jouer reste une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Premier retrait DMCA de Take-Two contre un portage GTA VI : Leonida et 3 007 forks",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-take-two-dmca-leonida-forks"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC (fuites, retraits, progrès)",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Classement des portages PC",
+     "url": "https://portwatch-vi.xyz/"
+    }
+   ]
+  },
   {
    "date": "2026-11-25T04:41:59Z",
    "titre": "J+6 matin : aucun nouveau palier ; GTA VI PC Race place aussi AnyXboxX « en jeu » à ~2,4 i/s",
