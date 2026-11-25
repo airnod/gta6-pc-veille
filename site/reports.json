@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-24T20:41:58Z",
+ "maj": "2026-11-25T00:42:21Z",
  "reports": [
+  {
+   "date": "2026-11-25T00:42:21Z",
+   "statut": "partiel",
+   "titre": "J+6 nuit : pas de nouveau palier, omonkey et CGBJ restent seuls « en jeu », à quelques i/s",
+   "resume": "Rien de neuf depuis 20 h 40 UTC : PortWatch n'a publié aucun article daté du 25/11 et le flux synchronisé est figé au 24/11 à 7 h 34 UTC. GameGPU (24/11) chiffre CGBJ à ~4 i/s, sans lumière ni textures complètes, non vérifiable.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 25/11 à 0 h 40 UTC, ni date, ni configuration, ni page Steam/Epic de Rockstar ou Take-Two. La piste d'un PC « début 2027 » reste une rumeur non confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory 67 % (en jeu partiel 0,8), XCL 62,5 % (en jeu partiel 0,5), Xbox2Windows 47,5 % (menu partiel). Le site PortWatch place omonkey (76 %) et CGBJ (72 %) devant, tous deux « En jeu », pas encore dans le flux."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "CGBJ : monde chargé, manette et PNJ fonctionnels, mais ~4 i/s sans éclairage (GameGPU, 24/11, d'après un seul post X). omonkey : ~5 i/s dans la prison ; XCL annonce 30 i/s sans préciser s'il dépasse les menus. Tout reste auto-déclaré, code privé pour CGBJ."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Aucun test de GTA VI au 25/11 : KytyPS5 et SharpEmu en restent aux menus de GTA V, AnyPS5 n'a pas de version publique et son développeur est suspendu sur X depuis le 22/11 (cause inconnue)."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "La build Xbox fuitée (exécutable publié le 23/11 à 15 h 36 CET) n'est toujours pas authentifiée, sans réaction publique de Rockstar ; aucun nouvel avis DMCA visant les portages GTA VI. Les faux « GTA VI PC » piégés (malwares, vol de comptes) se multiplient : toute offre prête à jouer est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GameGPU – Modders have launched GTA 6 on PC at around 4 FPS",
+     "url": "https://en.gamegpu.com/news/igry/moddery-zapustili-gta-6-na-pk-so-skorostyu-okolo-4-fps"
+    },
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – XCL reports 30 fps in GTA VI",
+     "url": "https://portwatch-vi.xyz/news/2026-11-24-xcl-30fps-in-game"
+    },
+    {
+     "titre": "XDA – An unofficial GTA 6 PC port is making progress",
+     "url": "https://www.xda-developers.com/unofficial-gta-6-pc-port-making-progress-developers-have-first-in-game-visuals/"
+    },
+    {
+     "titre": "Kami-Labs – GTA 6 sort sans version PC : une piste pour début 2027",
+     "url": "https://kami-labs.fr/grand-theft-auto-6/gta-6-pc-date-sortie/"
+    }
+   ]
+  },
   {
    "date": "2026-11-24T20:41:58Z",
    "titre": "J+5 soir : omonkey entre « en jeu » à ~5 i/s et prend la tête de PortWatch (76 %)",
