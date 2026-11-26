@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-26T08:41:43Z",
+ "maj": "2026-11-26T12:42:24Z",
  "reports": [
+  {
+   "date": "2026-11-26T12:42:24Z",
+   "titre": "J+7 midi : le portage CGBJ annonce ~25 i/s et 91,5 % d'avancement, puis voit son dépôt retiré en quelques minutes",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 8 h 40 UTC : GameGPU et DSOGaming (26/11) rapportent que CGBJ revendique 25 i/s en moyenne sur GPU NVIDIA, stable et sans plantage, pour un avancement de 91,5 % selon PortWatch. Ces chiffres sont auto-déclarés et non vérifiés. Le dépôt a été retiré quelques minutes après sa mise en ligne. Le flux PortWatch synchronisé reste figé au 24/11 et ne contient pas CGBJ.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 26/11 à 12 h 40 UTC, Rockstar et Take-Two n'ont toujours annoncé ni version PC, ni date, ni page Steam ou Epic. Take-Two parle d'une plateforme « de plus en plus importante » et dit renforcer ses défenses juridiques contre les portages PC créés par IA (TweakTown)."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux synchronisé est inchangé depuis le 24/11 à 7 h 34 UTC : VIctory mène avec 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu. CGBJ, absent de ce flux, serait à 91,5 % sur la nouvelle échelle de PortWatch, où « jouable » vaut 50 %."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon GameGPU (26/11), CGBJ s'appuie sur la couche VIctory/XCL et tiendrait 25 i/s en moyenne, avec un rendu proche de la console et quelques artefacts. La campagne serait faite à environ 80 %. Ces chiffres sont auto-déclarés, sans test reproductible. Le dernier article PortWatch (25/11, 11 h 02 UTC) donnait le build AMD de Belobug à ~3 i/s en missions."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 26/11 : ni KytyPS5, ni SharpEmu, ni AnyPS5 n'ont montré GTA VI. Les deux premiers en restent aux menus de GTA V, et AnyPS5 n'a toujours pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Le dépôt de CGBJ a été retiré quelques minutes après sa publication (GameGPU, 26/11). On ignore s'il s'agit d'un DMCA ou d'un retrait par l'auteur, et le dernier avis public reste celui contre Leonida et 3 007 forks (24/11). La build Xbox n'est toujours pas authentifiée. Toute offre de « GTA VI PC prêt à jouer » ou de « build CGBJ » à télécharger est une arnaque, souvent piégée par un malware."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GameGPU – Rockstar fait retirer en quelques minutes le portage PC de GTA 6 de CGBJ à 25 FPS",
+     "url": "https://en.gamegpu.com/news/igry/rockstar-za-schitanye-minuty-udalila-s-github-repozitorij-pk-porta-gta-6-ot-cgbj-s-25-fps"
+    },
+    {
+     "titre": "DSOGaming – Le portage PC CGBJ de GTA 6 serait terminé à 91 % avec des framerates jouables",
+     "url": "https://www.dsogaming.com/news/grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates/"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "TweakTown – Take-Two renforce ses défenses juridiques contre les clones PC de GTA 6 créés par IA",
+     "url": "https://www.tweaktown.com/news/114606/take-two-strengthens-legal-defenses-against-ai-built-gta-6-pc-clones/index.html"
+    }
+   ]
+  },
   {
    "date": "2026-11-26T08:41:43Z",
    "titre": "J+7 matin : toujours aucun portage jouable, VIctory reste en tête à 67 %, GTA VI PC Race mise à 50 % sur un jeu jouable d'ici ce soir",
