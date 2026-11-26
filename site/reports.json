@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-26T16:41:44Z",
+ "maj": "2026-11-26T20:41:54Z",
  "reports": [
+  {
+   "date": "2026-11-26T20:41:54Z",
+   "titre": "J+7 soir : aucun nouveau palier, le « 30 i/s en 4K » de CGBJ reste une vidéo non vérifiée et le flux PortWatch est figé",
+   "statut": "partiel",
+   "resume": "Rien de décisif depuis 16 h 40 UTC : pas de nouvel article PortWatch depuis le 25/11 à 11 h 02 UTC et classement synchronisé toujours daté du 24/11. TechRadar (26/11, 11 h 58 UTC) relaie les 25–30 i/s en 4K de CGBJ d'après une vidéo Reddit, sans test indépendant, ce qui contraste avec les 17–18 i/s relevés par PCGH.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 26/11 à 20 h 40 UTC, ni Rockstar ni Take-Two n'ont annoncé de version PC, de date ou de page Steam/Epic. Strauss Zelnick répète que Rockstar sert « le cœur de public » d'abord et fera des annonces « en temps voulu » (GamesRadar)."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé inchangé (24/11, 7 h 34 UTC) : VIctory mène avec 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu, et CGBJ n'apparaît pas dans ce flux."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "TechRadar (26/11) décrit une vidéo de CGBJ sur la mission du bateau à 25–30 i/s en 4K avec quelques glitchs, et des cinématiques à 40 i/s avec FSR (Brackz sur X), le tout non vérifié. Côté PortWatch, le build AMD de Belobug joue les missions à ~3 i/s et ZETTROX n'a pas planté du prologue à la 1re mission de Jason (25/11)."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Aucun changement au 26/11 : KytyPS5 et SharpEmu en restent à GTA V (menus jusqu'à 60 i/s, plantages rapides), et AnyPS5, annoncé à 96 % de couverture des shaders, n'a ni version publique ni démonstration de GTA VI."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Les clips de CGBJ sont retirés au fil de la journée, et TechRadar évoque des retraits demandés par Take-Two. Aucun nouvel avis DMCA public n'est apparu depuis celui du 24/11 (Leonida et 3 007 forks). La build Xbox fuitée n'est toujours pas authentifiée. Selon PortWatch, tous les « GTA VI pour PC » à télécharger repérés sont faux, et certains vident des comptes : c'est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "TechRadar – Un portage non officiel de GTA 6 tiendrait 30 i/s stables en 4K",
+     "url": "https://www.techradar.com/gaming/pc-gamers-could-see-an-unofficial-gta-6-port-sooner-rather-than-later-stable-30fps-gameplay-at-4k-has-reportedly-been-achieved"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "GamesRadar – Pas de GTA 6 sur PC au lancement : Rockstar sert d'abord le cœur de public",
+     "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-skipping-pc-at-launch-not-due-to-playstation-deal-but-because-rockstar-focuses-on-the-core-consumer-take-two-ceo-says/"
+    },
+    {
+     "titre": "IBTimes UK – AnyPS5 atteint 96 % de couverture des shaders",
+     "url": "https://www.ibtimes.co.uk/anyps5-ps5-shader-support-windows-linux-1824715"
+    }
+   ]
+  },
   {
    "date": "2026-11-26T16:41:44Z",
    "titre": "J+7 après-midi : les 25 i/s de CGBJ contestés (17–18 i/s mesurés sur RTX 5090), toujours aucun build jouable",
