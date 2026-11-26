@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-26T00:41:54Z",
+ "maj": "2026-11-26T04:41:51Z",
  "reports": [
+  {
+   "date": "2026-11-26T04:41:51Z",
+   "titre": "J+7 aube : nuit calme, aucun nouveau palier ni annonce, VIctory reste en tête à 67 %",
+   "statut": "partiel",
+   "resume": "Rien de majeur depuis 0 h 40 UTC : aucun nouvel article PortWatch (dernier le 25/11 à 11 h 02 UTC) et classement toujours figé au 24/11. Shattered (26/11, 2 h 45 UTC) fait le point : aucune build PC jouable vérifiée, la fenêtre « T1 2027 » et les 32 Go de RAM restent non confirmés.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 26/11 à 4 h 40 UTC, Rockstar n'a annoncé ni version PC, ni date, ni prix, ni configuration, et aucune page Steam/Epic n'existe. Selon Shattered (26/11), la fenêtre « T1 2027 » et l'exigence de 32 Go de RAM qui circulent restent des rumeurs."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory en tête à 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). TuxBox et Five Star Recomp sont à 40 % (1re image) ; Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Pas de nouveau chiffre cette nuit : les meilleurs builds privés (Belobug ~3 i/s selon PortWatch le 25/11, klbf-lab 5–9 i/s selon GTA VI PC Race le 25/11) jouent des missions, mais tout reste auto-déclaré. Shattered (26/11) rappelle qu'aucune source vérifiée ne montre de build PC jouable."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 26/11 : aucun test de GTA VI sur KytyPS5, SharpEmu ou AnyPS5. Les deux premiers en restent aux menus de GTA V (jusqu'à 60 i/s avant plantage), et AnyPS5 n'a pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouvel avis DMCA depuis celui du 24/11 contre Leonida (3 007 dépôts) ; Rockstar ne commente toujours pas la build Xbox fuitée, qui n'est pas authentifiée. Toute offre de « GTA VI PC prêt à jouer » est une arnaque : les faux « 113 Go » et fausses démos cachent des voleurs de mots de passe."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Shattered – GTA 6 PC : la build Xbox fuitée, toujours pas de date PC (26/11)",
+     "url": "https://shattered.io/gta-6-pc-gamers-leak-catch-november-build-no-official-pc-date-nov-26/"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Classement des portages PC",
+     "url": "https://portwatch-vi.xyz/"
+    },
+    {
+     "titre": "Cybernews – De fausses builds de GTA 6 servent à diffuser des malwares",
+     "url": "https://cybernews.com/security/gta-six-game-build-fake-leak/"
+    }
+   ]
+  },
   {
    "date": "2026-11-26T00:41:54Z",
    "titre": "J+7 nuit : un build VIctory tiendrait 77 min en missions à ~5 i/s, toujours loin du jouable",
