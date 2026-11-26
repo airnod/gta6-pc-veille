@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-25T20:42:29Z",
+ "maj": "2026-11-26T00:41:54Z",
  "reports": [
+  {
+   "date": "2026-11-26T00:41:54Z",
+   "titre": "J+7 nuit : un build VIctory tiendrait 77 min en missions à ~5 i/s, toujours loin du jouable",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 20 h 40 UTC : le tracker GTA VI PC Race (relevé du 25/11, 17 h 24 UTC) place en tête klbf-lab, un build dérivé de VIctory, avec une session de 77 min et deux missions jouées à 5–9 i/s (auto-déclaré). Aucun nouvel article PortWatch ni nouveau score ; le développeur d'omonkey dit avoir reçu une lettre de Rockstar (non publiée).",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 26/11 à 0 h 40 UTC, toujours aucune annonce, date, configuration ni page Steam/Epic de Rockstar ou Take-Two. Take-Two maintient sa ligne « consoles d'abord » ; une sortie PC vers 2028 reste une spéculation de la presse (PC Gamer)."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé (24/11, 7 h 34 UTC, inchangé) : VIctory en tête à 67 % (En jeu partiel 0,8), puis XCL 62,5 % (En jeu partiel 0,5) et Xbox2Windows 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon GTA VI PC Race (25/11, 17 h 24 UTC), une vingtaine de builds sont « en jeu » : klbf-lab mène (77 min, 5–9 i/s, moyenne 5,2, RX 9070 XT), devant Flamingo (7,8–14 i/s, non confirmé) et Belobug AMD (5–7 i/s à l'arrêt). Tout est auto-déclaré sur une seule machine ; aucun n'atteint le seuil du site (20 i/s pendant 30 min)."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 26/11 : aucun test de GTA VI sur KytyPS5, SharpEmu ou AnyPS5 ; les deux premiers en restent aux menus de GTA V (jusqu'à 60 i/s avant plantage), AnyPS5 n'a pas de version publique."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Le 25/11, VGTimes rapporte que le développeur d'omonkey a cessé ses streams après une lettre de Rockstar (non publiée, Rockstar ne commente pas), et des vidéos de builds non officiels sont retirées par Take-Two ; pas de nouvel avis DMCA GitHub depuis Leonida (3 007 dépôts, 24/11). La build Xbox fuitée n'est pas authentifiée ; toute offre de « GTA VI PC prêt à jouer » est une arnaque, souvent piégée."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GTA VI PC Race – Suivi en direct des portages PC non officiels",
+     "url": "https://vuyp.github.io/gta6-pc-race/"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Classement des portages PC",
+     "url": "https://portwatch-vi.xyz/"
+    },
+    {
+     "titre": "PC Gamer – Joueurs PC : GTA 6 probablement pas avant 2028",
+     "url": "https://www.pcgamer.com/games/grand-theft-auto/well-pc-gamers-time-to-make-peace-with-the-fact-that-we-probably-wont-be-playing-gta-6-until-like-2028-unless-we-cave-in-and-buy-the-console-version"
+    }
+   ]
+  },
   {
    "date": "2026-11-25T20:42:29Z",
    "titre": "J+6 soir : un build privé « tout AMD » (Belobug) jouerait des missions dans un monde proche de la console, mais à ~3 i/s",
