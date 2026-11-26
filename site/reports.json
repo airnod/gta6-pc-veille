@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-26T12:42:24Z",
+ "maj": "2026-11-26T16:41:44Z",
  "reports": [
+  {
+   "date": "2026-11-26T16:41:44Z",
+   "titre": "J+7 après-midi : les 25 i/s de CGBJ contestés (17–18 i/s mesurés sur RTX 5090), toujours aucun build jouable",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 12 h 40 UTC : PC Games Hardware (26/11, 10 h 45 CET) relève que le journal de CGBJ affiche 54–58 ms par image (~17–18 i/s) sur RTX 5090, loin des 25 i/s annoncés. Quatre dépôts (CGBJ, ZETTROX, victory-perf, keylime) ont disparu sans avis DMCA public. Le flux PortWatch synchronisé reste figé au 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 26/11 à 16 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. La fenêtre « T1 2027 » attribuée à GamesBeat reste une info d'initié, non officielle (PCGH, 26/11)."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé inchangé (24/11, 7 h 34 UTC) : VIctory mène avec 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu, et CGBJ est absent de ce flux."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon PCGH (26/11), le fork VIctory-NVIDIA annonce 20–22 i/s en intérieur (profil Series S, 960×540, RTX 5070), et VIctory-7900XTX 13–17 i/s en rue. Les plus longues sessions restent 77 min à 5,2 i/s (klbf-lab) et 36 min à 10 i/s (Kelvaroq). Aucun build n'atteint le seuil « jouable » (20 i/s pendant 30 min), et tout est auto-déclaré."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 26/11 : aucun émulateur (KytyPS5, SharpEmu, AnyPS5) n'a montré GTA VI sur PC. Les rumeurs de copies PS5 lancées sur consoles jailbreakées ne sont pas confirmées, et le firmware 26.07 n'est pas jailbreaké (stupidDOPE, 26/11)."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "CGBJ a été public moins d'une heure et était inaccessible à 9 h 01 CET. ZETTROX, victory-perf et keylime ont aussi disparu, sans avis DMCA public depuis celui du 24/11 (Leonida et 3 007 forks). Le développeur « omonkey » dit avoir reçu un message de Rockstar (non vérifié) et a cessé ses streams. Des sites imitant les trackers circulent, et toute offre de « GTA VI PC prêt à jouer » est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PC Games Hardware – Un portage PC de GTA 6 à 25 i/s disparaît au bout d'une heure",
+     "url": "https://www.pcgameshardware.de/GTA-6-Spiel-55239/News/GTA-6-PC-port-reports-25-fps-and-suddenly-goes-offline-1561150/"
+    },
+    {
+     "titre": "stupidDOPE – Portages PC de GTA VI : 6 à 20 i/s en jeu malgré les retraits (26/11)",
+     "url": "https://stupiddope.com/2026/11/gta-vi-pc-port-progress-unofficial-ports-render-in-game-at-6-to-20fps-despite-take-two-takedowns/"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "GTA VI PC Race – Suivi en direct des portages PC non officiels",
+     "url": "https://vuyp.github.io/gta6-pc-race/"
+    }
+   ]
+  },
   {
    "date": "2026-11-26T12:42:24Z",
    "titre": "J+7 midi : le portage CGBJ annonce ~25 i/s et 91,5 % d'avancement, puis voit son dépôt retiré en quelques minutes",
