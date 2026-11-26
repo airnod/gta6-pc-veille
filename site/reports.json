@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-26T04:41:51Z",
+ "maj": "2026-11-26T08:41:43Z",
  "reports": [
+  {
+   "date": "2026-11-26T08:41:43Z",
+   "titre": "J+7 matin : toujours aucun portage jouable, VIctory reste en tête à 67 %, GTA VI PC Race mise à 50 % sur un jeu jouable d'ici ce soir",
+   "statut": "partiel",
+   "resume": "Rien de neuf depuis 4 h 40 UTC : aucun article PortWatch depuis le 25/11 à 11 h 02 UTC, aucun relevé GTA VI PC Race depuis le 25/11 à 17 h 24 UTC, classement figé au 24/11. Le tracker GTA VI PC Race estime à 5 chances sur 10 qu'un build atteigne « jouable » (20 i/s pendant 30 min) d'ici ce jeudi 26/11 au soir.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 26/11 à 8 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni configuration, et il n'existe aucune page Steam ou Epic. La ligne officielle reste « consoles d'abord », avec des annonces PC « en temps voulu »."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Classement synchronisé au 24/11 à 7 h 34 UTC (inchangé) : VIctory mène à 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). TuxBox et Five Star Recomp sont à 40 % (1re image) ; Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon GTA VI PC Race (relevé du 25/11 à 17 h 24 UTC), klbf-lab reste en tête (77 min sans plantage, 5 à 9 i/s, RX 9070 XT). D'autres builds annoncent Kelvaroq (7 à 10 i/s en 4K sur RTX 5080) et victory-perf (9 à 14 i/s en intérieur, non confirmé). Aucun build n'atteint le seuil de 20 i/s pendant 30 min, et tous les chiffres sont auto-déclarés."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Aucun changement au 26/11 : ni KytyPS5, ni SharpEmu, ni AnyPS5 n'ont été montrés avec GTA VI. Les deux premiers en restent aux menus de GTA V (jusqu'à 60 i/s), et le compte X du développeur d'AnyPS5 est suspendu depuis le 22/11."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Pas de nouvel avis DMCA depuis le 24/11 (Leonida et 3 007 forks). TweakTown confirme que Take-Two invoque l'interdiction de rétro-ingénierie de Rockstar, qui ne s'exprime pas sur la build Xbox fuitée (non authentifiée). Toute offre de « GTA VI PC prêt à jouer » est une arnaque, souvent piégée par un malware."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "GTA VI PC Race – Suivi en direct des portages PC non officiels",
+     "url": "https://vuyp.github.io/gta6-pc-race/"
+    },
+    {
+     "titre": "TweakTown – Retrait du portage GTA 6 PC : Take-Two invoque l'interdiction de rétro-ingénierie",
+     "url": "https://www.tweaktown.com/news/114877/gta-6-pc-port-takedown-confirmed-take-two-cites-rockstars-ban-on-reverse-engineering/index.html"
+    },
+    {
+     "titre": "DSOGaming – Le portage non officiel CGBJ atteint le jeu",
+     "url": "https://www.dsogaming.com/news/grand-theft-auto-6-unofficial-pc-port-cgbj-now-reaches-in-game/"
+    }
+   ]
+  },
   {
    "date": "2026-11-26T04:41:51Z",
    "titre": "J+7 aube : nuit calme, aucun nouveau palier ni annonce, VIctory reste en tête à 67 %",
