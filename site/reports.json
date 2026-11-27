@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-27T00:41:39Z",
+ "maj": "2026-11-27T04:41:42Z",
  "reports": [
+  {
+   "date": "2026-11-27T04:41:42Z",
+   "titre": "J+8 matin : PortWatch affirme qu'un fork privé de CGBJ fait tourner le multijoueur à 25–30 i/s, aucun nouveau palier au classement",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 0 h 40 UTC : PortWatch a publié le 26/11 à 22 h 42 UTC une exclusivité sur un fork privé du build de CGBJ (groupe de TeK) qui ferait tourner le multijoueur avec chat vocal de proximité à 25–30 i/s. PortWatch dit avoir vérifié la vidéo, mais les chiffres sont auto-déclarés et le build n'est pas classé. Le flux du classement reste figé au 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 27/11 à 4 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. La fenêtre « début 2027 » reste une info d'initié non confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé inchangé (24/11, 7 h 34 UTC) : VIctory mène avec 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon PortWatch (26/11, 22 h 42 UTC), le groupe de TeK montre en vidéo plusieurs joueurs, véhicules et chat vocal de proximité sur un fork privé de CGBJ, à « 25–30 i/s stables » d'après le groupe. C'est le premier build multijoueur signalé, mais le code est privé, aucun test indépendant n'existe et le build n'a pas de note PortWatch."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 27/11 : KytyPS5 et SharpEmu en restent à GTA V (menus jusqu'à 60 i/s), et AnyPS5 n'a ni version publique ni démonstration de GTA VI sur PC."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouvel avis DMCA public depuis celui du 24/11 à 22 h 09 UTC (Leonida et 3 007 forks). La build Xbox fuitée n'est toujours pas authentifiée officiellement. Tout « GTA VI PC » à télécharger est faux, et certains vident des comptes : c'est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Exclusive: GTA VI multiplayer is running on PC (26/11)",
+     "url": "https://portwatch-vi.xyz/news/2026-11-26-multiplayer-running"
+    },
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "jeuxvideo.com – GTA 6 sur PC : 3007 versions pirates identifiées",
+     "url": "https://www.jeuxvideo.com/news/2116831/gta-6-sur-pc-3007-versions-pirates-deja-identifiees-par-rockstar-des-videos-tournent.htm"
+    },
+    {
+     "titre": "Wisevoter – Unofficial GTA VI PC Port Hits 60 FPS (27/11)",
+     "url": "https://wisevoter.com/world/2026/11/27/unofficial-gta-vi-pc-port-tops-60-fps"
+    }
+   ]
+  },
   {
    "date": "2026-11-27T00:41:39Z",
    "titre": "J+8 nuit : une vidéo d'un portage revendique plus de 60 i/s, mais seulement en cinématiques ; aucun nouveau palier",
