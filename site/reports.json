@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-26T20:41:54Z",
+ "maj": "2026-11-27T00:41:39Z",
  "reports": [
+  {
+   "date": "2026-11-27T00:41:39Z",
+   "titre": "J+8 nuit : une vidéo d'un portage revendique plus de 60 i/s, mais seulement en cinématiques ; aucun nouveau palier",
+   "statut": "partiel",
+   "resume": "Nouveau depuis 20 h 40 UTC : GameGPU (26/11) relaie une vidéo Reddit d'un portage non identifié affichant 59–64 i/s en cinématiques et 44–56 i/s lors du décollage de l'hydravion. C'est auto-déclaré, sans gameplay ni configuration connue. Le classement PortWatch synchronisé reste figé au 24/11, et aucun article PortWatch n'est paru depuis le 25/11 à 11 h 02 UTC.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 27/11 à 0 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. La fenêtre « début 2027 » reste une info d'initié, non confirmée (God is a Geek, octobre 2026)."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé inchangé (24/11, 7 h 34 UTC) : VIctory mène avec 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon GameGPU (26/11), une vidéo montre la cinématique de Lucia et du gardien à 59–64 i/s, l'écran du chapitre 1 à 75 i/s et le décollage de l'hydravion à 44–56 i/s (creux à 31 i/s). La VRAM utilisée est de 11,4 Go. Le fork et le PC ne sont pas précisés, des artefacts de shaders subsistent, et rien n'est vérifié. Ce n'est pas du gameplay."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 27/11 : KytyPS5 et SharpEmu en restent à GTA V (menus jusqu'à 60 i/s, plantages rapides), et AnyPS5 n'a ni version publique ni démonstration de GTA VI sur PC."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouvel avis DMCA public depuis celui du 24/11 à 22 h 09 UTC (Leonida et 3 007 forks, Tom's Hardware). La build Xbox fuitée n'est toujours pas authentifiée. Les faux « builds GTA 6 » de plus de 100 Go et les fausses démos diffusent des malwares : toute offre de « GTA VI PC prêt à jouer » est une arnaque."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GameGPU – Un portage PC non officiel de GTA VI dépasse pour la première fois les 60 i/s",
+     "url": "https://en.gamegpu.com/news/igry/neofitsialnyj-pk-port-grand-theft-auto-vi-vpervye-preodolel-otmetku-v-60-fps-na-pk"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "Tom's Hardware – Take-Two fait supprimer 3 007 dépôts de portages PC de GTA 6",
+     "url": "https://www.tomshardware.com/video-games/pc-gaming/take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-tools-fuel-wave-of-unofficial-builds"
+    },
+    {
+     "titre": "God is a Geek – GTA 6 sur PC viserait début 2027",
+     "url": "https://godisageek.com/2026/10/gta-6-pc-release-date-q1-2027"
+    },
+    {
+     "titre": "Cybernews – De faux builds de GTA 6 servent à diffuser des malwares",
+     "url": "https://cybernews.com/security/gta-six-game-build-fake-leak/"
+    }
+   ]
+  },
   {
    "date": "2026-11-26T20:41:54Z",
    "titre": "J+7 soir : aucun nouveau palier, le « 30 i/s en 4K » de CGBJ reste une vidéo non vérifiée et le flux PortWatch est figé",
