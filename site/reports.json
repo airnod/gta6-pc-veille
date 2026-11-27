@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-27T08:42:05Z",
+ "maj": "2026-11-27T12:41:56Z",
  "reports": [
+  {
+   "date": "2026-11-27T12:41:56Z",
+   "titre": "J+8 midi : ni nouvel article PortWatch ni nouveau palier, le classement reste figé au 24/11",
+   "statut": "partiel",
+   "resume": "Rien de neuf depuis 8 h 40 UTC. La page d'actualités de PortWatch ne contient aucun article daté du 27/11, et le flux du classement est toujours daté du 24/11 à 7 h 34 UTC. Les chiffres sur CGBJ (20 à 25 i/s, multijoueur) restent auto-déclarés.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 27/11 à 12 h 40 UTC, ni Rockstar ni Take-Two n'ont annoncé de version PC, de date ou de page Steam ou Epic. Lors de ses derniers résultats, Strauss Zelnick a éludé la question du portage PC (Wccftech). Le « 1er trimestre 2027 » reste une info d'initié non confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux synchronisé n'a pas bougé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, marqué « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Aucune nouvelle démonstration vérifiée depuis le 26/11. Selon PCGH, le portage CGBJ (25 i/s annoncés, puis 20 i/s) n'est resté public qu'environ une heure. Le dernier article de PortWatch sur le rendu date du 25/11 à 11 h 02 UTC : un build sur PC tout AMD, proche du jeu d'origine, enchaîne les missions mais tourne à environ 3 i/s."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 27/11. KytyPS5 et SharpEmu en restent à GTA V : menus jusqu'à 60 i/s, puis plantages rapides (Tom's Hardware). AnyPS5 n'a montré aucune image de GTA VI sur PC."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouvel avis DMCA public depuis celui du 24/11 à 22 h 09 UTC (Leonida et 3 007 forks). Selon TweakTown, Take-Two renforce ses défenses juridiques contre les clones PC générés par IA. La build Xbox fuitée n'est toujours pas authentifiée officiellement. Toute offre de « GTA VI PC prêt à jouer » est une arnaque, souvent porteuse de malwares."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PCGH – GTA 6 on PC: Fan port reporting 25 fps was online for just an hour",
+     "url": "https://www.pcgameshardware.de/GTA-6-Spiel-55239/News/GTA-6-PC-port-reports-25-fps-and-suddenly-goes-offline-1561150/"
+    },
+    {
+     "titre": "Wccftech – Take-Two beats earnings, but Zelnick stays coy on the PC port",
+     "url": "https://wccftech.com/gta-6-november-19-date-holds-take-two-beats-earnings-zelnick-pc-port/"
+    },
+    {
+     "titre": "TweakTown – Take-Two strengthens legal defenses against AI-built GTA 6 PC clones",
+     "url": "https://www.tweaktown.com/news/114606/take-two-strengthens-legal-defenses-against-ai-built-gta-6-pc-clones/index.html"
+    },
+    {
+     "titre": "Tom's Hardware – PS5 emulator runs GTA V at up to 60 fps on PC but quickly crashes",
+     "url": "https://www.tomshardware.com/video-games/pc-gaming/ps5-emulator-can-now-run-the-console-version-of-gta-v-at-up-to-60-fps-on-pc-but-quickly-crashes-as-tweakers-continue-to-optimize-ps5-emulation-advancing-at-an-astronomical-pace-leading-up-to-gta-vi-launch"
+    }
+   ]
+  },
   {
    "date": "2026-11-27T08:42:05Z",
    "titre": "J+8 matin : aucun nouveau palier ni article PortWatch, le classement reste figé au 24/11",
