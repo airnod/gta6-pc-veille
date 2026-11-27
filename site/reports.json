@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-27T12:41:56Z",
+ "maj": "2026-11-27T16:42:21Z",
  "reports": [
+  {
+   "date": "2026-11-27T16:42:21Z",
+   "titre": "J+8 après-midi : toujours aucun nouveau palier, le classement PortWatch reste figé au 24/11",
+   "statut": "partiel",
+   "resume": "Rien de neuf depuis 12 h 40 UTC. Aucun article PortWatch n'est daté du 27/11 et le flux du classement date toujours du 24/11 à 7 h 34 UTC. Côté juridique, TweakTown confirme que Take-Two invoque l'interdiction de rétro-ingénierie de Rockstar pour justifier ses retraits.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 27/11 à 16 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. Take-Two renvoie toute annonce PC à Rockstar (TweakTown), et le « 1er trimestre 2027 » reste une rumeur."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux inchangé depuis le 24/11 à 7 h 34 UTC : VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Aucune nouvelle démo vérifiée au 27/11. Le dernier article de PortWatch sur le rendu, publié le 25/11 à 11 h 02 UTC, décrit le build AMD de Belobug : il enchaîne les missions à environ 3 i/s. Le multijoueur à 25–30 i/s du fork de CGBJ (26/11) reste auto-déclaré."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 27/11. KytyPS5 et SharpEmu en restent à GTA V (menus jusqu'à 60 i/s, plantages rapides), et AnyPS5 n'a montré aucune image de GTA VI sur PC."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouvel avis DMCA public depuis celui du 24/11 à 22 h 09 UTC (Leonida et 3 007 forks). Selon TweakTown, Take-Two s'appuie sur l'interdiction de rétro-ingénierie de Rockstar. La build Xbox fuitée n'est toujours pas authentifiée. Les faux « GTA VI PC » à télécharger volent des identifiants : ce sont des arnaques."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "TweakTown – GTA 6 PC port takedown confirmed: Take-Two cites Rockstar's ban on reverse engineering",
+     "url": "https://www.tweaktown.com/news/114877/gta-6-pc-port-takedown-confirmed-take-two-cites-rockstars-ban-on-reverse-engineering/index.html"
+    },
+    {
+     "titre": "TweakTown – GTA 6 PC and physical disc news will come from Rockstar, confirms Take-Two",
+     "url": "https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html"
+    },
+    {
+     "titre": "heise – Take-Two gets unofficial GTA 6 PC port removed from GitHub",
+     "url": "https://www.heise.de/en/news/GTA-6-Take-Two-gets-unofficial-PC-port-removed-from-GitHub-11537104.html"
+    },
+    {
+     "titre": "Hone – GTA 6 PC Port and Download: Nothing Works, and the Fakes Steal Logins",
+     "url": "https://hone.gg/blog/gta-6-pc-emulator"
+    }
+   ]
+  },
   {
    "date": "2026-11-27T12:41:56Z",
    "titre": "J+8 midi : ni nouvel article PortWatch ni nouveau palier, le classement reste figé au 24/11",
