@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-27T16:42:21Z",
+ "maj": "2026-11-27T20:41:39Z",
  "reports": [
+  {
+   "date": "2026-11-27T20:41:39Z",
+   "titre": "J+8 soir : GitHub retire le build de Belobug, ScarlettPort 0.5.3 annonce 22 i/s en jeu (auto-déclaré)",
+   "statut": "partiel",
+   "resume": "Deux nouveautés depuis 16 h 40 UTC. PortWatch confirme à 18 h 33 UTC que GitHub a supprimé le dépôt et le compte de Belobug, auteur du build le mieux noté. GameRant (16 h 55 UTC) décrit ScarlettPort 0.5.3, qui dit dépasser les menus. Le classement PortWatch reste figé au 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 27/11 à 20 h 40 UTC, ni Rockstar ni Take-Two n'ont annoncé de version PC, de date ou de page Steam ou Epic. Le 1er trimestre 2027 avancé en octobre par les sources de GamesBeat n'est toujours pas confirmé."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux est inchangé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu. ScarlettPort n'apparaît pas au classement."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon GameRant (27/11, 16 h 55 UTC), la couche de compatibilité ScarlettPort 0.5.3 permet de contrôler le personnage dans la zone d'ouverture, mais le projet est « loin d'être viable ». Les tests de la communauté, auto-déclarés, donnent 22 i/s médians sur RX 9060 XT et 12,8 i/s sur RTX 5070 Ti. Le multijoueur à 25–30 i/s (26/11) n'est toujours pas vérifié de façon indépendante."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 27/11 au soir. KytyPS5 et SharpEmu en restent à GTA V : menus jusqu'à 60 i/s, puis plantages. AnyPS5 n'a montré aucune image de GTA VI sur PC."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Selon PortWatch (27/11, 18 h 33 UTC), GitHub a supprimé le dépôt et le compte de Belobug en invoquant ses conditions d'utilisation : c'est le deuxième retrait majeur après celui de Leonida et de ses 3 007 forks (24/11). La build Xbox fuitée n'est toujours pas authentifiée. Toute offre de « GTA VI PC prêt à jouer » est une arnaque, souvent porteuse de malwares."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – Exclusive: GitHub removes Belobug's GTA VI build over its Terms of Service",
+     "url": "https://portwatch-vi.xyz/news/2026-11-27-belobug-dmca.html"
+    },
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "GameRant – Unofficial GTA 6 PC Port Is Now Live, No Building Required",
+     "url": "https://gamerant.com/gta-6-unofficial-pc-port-scarlettport-release/"
+    },
+    {
+     "titre": "Playnews – Version PC de GTA 6 : les sources de GamesBeat évoquent le T1 2027",
+     "url": "https://www.playnews.gg/leaks/version-pc-de-gta-6-les-sources-de-gamesbeat-evoquent-le-t1-2027-rockstar-reste-silencieux"
+    },
+    {
+     "titre": "Notebookcheck – PS5 emulator runs console version of GTA V at 60 fps",
+     "url": "https://www.notebookcheck.net/PS5-emulator-runs-console-version-of-GTA-V-at-60-fps.1391217.0.html"
+    }
+   ]
+  },
   {
    "date": "2026-11-27T16:42:21Z",
    "titre": "J+8 après-midi : toujours aucun nouveau palier, le classement PortWatch reste figé au 24/11",
