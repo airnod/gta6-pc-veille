@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-27T04:41:42Z",
+ "maj": "2026-11-27T08:42:05Z",
  "reports": [
+  {
+   "date": "2026-11-27T08:42:05Z",
+   "titre": "J+8 matin : aucun nouveau palier ni article PortWatch, le classement reste figé au 24/11",
+   "statut": "partiel",
+   "resume": "Peu de changement depuis 4 h 40 UTC : aucun nouvel article PortWatch après l'exclusivité multijoueur du 26/11 (22 h 42 UTC), et le flux du classement est toujours daté du 24/11 à 7 h 34 UTC. PCGH précise que le code de CGBJ n'est resté public qu'environ une heure le 26/11 et que ses 25 i/s ne sont pas vérifiés.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 27/11 à 8 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. Un insider cité par GamesBeat parle du 1er trimestre 2027, sans confirmation officielle."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Flux synchronisé inchangé (24/11, 7 h 34 UTC) : VIctory mène avec 67 % (En jeu partiel 0,8), devant XCL à 62,5 % (En jeu partiel 0,5) et Xbox2Windows à 47,5 % (Menu partiel 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon PCGH (26/11, 10 h 45 CET), le code de CGBJ a été publié vers 8 h 23 et était inaccessible dès 9 h 01. Les 25 i/s annoncés par PortWatch, ramenés ensuite à 20 i/s, contredisent le journal du développeur (17–18 i/s sur RTX 5090) : rien n'est vérifié de façon indépendante, pas plus que le multijoueur à 25–30 i/s."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 27/11 : KytyPS5 et SharpEmu en restent à GTA V (menus jusqu'à 60 i/s, plantages rapides), et AnyPS5 (96 % de couverture des shaders annoncée) n'a montré aucune image de GTA VI sur PC."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouvel avis DMCA public depuis celui du 24/11 à 22 h 09 UTC (Leonida et 3 007 forks), mais PCGH compte au moins quatre autres projets disparus sans avis connu, et un développeur aurait reçu un message de Rockstar. La build Xbox fuitée n'est pas authentifiée officiellement. Toute offre de « GTA VI PC prêt à jouer » et les copies de CGBJ qui circulent sont à traiter comme des arnaques."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PCGH – GTA 6 sur PC : le portage de fans à 25 i/s n'est resté en ligne qu'une heure",
+     "url": "https://www.pcgameshardware.de/GTA-6-Spiel-55239/News/PC-Port-CGBJ-Release-25-Fps-Repository-offline-1561139"
+    },
+    {
+     "titre": "PortWatch VI – Actualités GTA VI sur PC",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Exclusive: GTA VI multiplayer is running on PC (26/11)",
+     "url": "https://portwatch-vi.xyz/news/2026-11-26-multiplayer-running"
+    },
+    {
+     "titre": "IBTimes UK – AnyPS5 atteint 96 % de couverture des shaders",
+     "url": "https://www.ibtimes.co.uk/anyps5-ps5-shader-support-windows-linux-1824715"
+    }
+   ]
+  },
   {
    "date": "2026-11-27T04:41:42Z",
    "titre": "J+8 matin : PortWatch affirme qu'un fork privé de CGBJ fait tourner le multijoueur à 25–30 i/s, aucun nouveau palier au classement",
