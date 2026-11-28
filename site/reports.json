@@ -1,6 +1,61 @@
 {
- "maj": "2026-11-28T12:41:45Z",
+ "maj": "2026-11-28T16:42:27Z",
  "reports": [
+  {
+   "date": "2026-11-28T16:42:27Z",
+   "titre": "J+9 après-midi : un « 60 i/s » relayé par la presse (non vérifié), PortWatch et son classement toujours figés",
+   "statut": "partiel",
+   "resume": "Peu de changement depuis 12 h 40 UTC. Gamegpu et Wisevoter (27/11) relaient un portage non officiel qui aurait dépassé 60 i/s, une première non vérifiée par PortWatch. PortWatch n'a toujours rien publié le 28/11, et son flux de classement date du 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 28/11 à 16 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. Strauss Zelnick répète que les consoles passent d'abord et que Rockstar communiquera « en temps voulu »."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux n'a pas changé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Gamegpu et Wisevoter (27/11) évoquent un portage non officiel à plus de 60 i/s. Hardwareluxx cite jusqu'à 29 i/s et ComputerBase environ 20 i/s. Tout est auto-déclaré. La dernière démo vérifiée par PortWatch reste le multijoueur à 25–30 i/s (26/11, 22 h 42 UTC)."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 28/11 à 16 h 40 UTC. KytyPS5 et SharpEmu en restent à GTA V, qui affiche ses menus puis plante. AnyPS5 n'a montré aucune image de GTA VI."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouveau retrait depuis Belobug (27/11, 18 h 33 UTC), après Leonida et ses 3 007 forks (24/11). La build Xbox fuitée n'est toujours pas authentifiée. Tout « GTA VI PC » à télécharger ou à acheter est une arnaque : Cybernews et PCGH signalent de fausses builds de 113 Go piégées par des malwares."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "Wisevoter – Unofficial GTA VI PC Port Hits 60 FPS",
+     "url": "https://wisevoter.com/world/2026/11/27/unofficial-gta-vi-pc-port-tops-60-fps"
+    },
+    {
+     "titre": "Hardwareluxx – GTA 6: Inoffizielle PC-Ports erreichen bis zu 29 FPS",
+     "url": "https://www.hardwareluxx.de/index.php/news/software/spiele/71111-gta-6-inoffizielle-pc-ports-erreichen-bis-zu-29-fps-mit-mod-menue-und-launcher.html"
+    },
+    {
+     "titre": "ComputerBase – GTA 6: Inoffizielle PC-Portierung knackt erstmals rund 20 FPS",
+     "url": "https://www.computerbase.de/news/gaming/gta-6-inoffizielle-pc-portierung-knackt-erstmals-rund-20-fps.100549/"
+    },
+    {
+     "titre": "Cybernews – Scammers post fake GTA 6 pre-release build to spread malware",
+     "url": "https://cybernews.com/security/gta-six-game-build-fake-leak/"
+    }
+   ]
+  },
   {
    "date": "2026-11-28T12:41:45Z",
    "titre": "J+9 midi : un projet se dit « jouable » à 21 i/s (non vérifié), classement PortWatch inchangé",
