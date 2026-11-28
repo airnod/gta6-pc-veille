@@ -1,6 +1,53 @@
 {
- "maj": "2026-11-28T08:42:11Z",
+ "maj": "2026-11-28T12:41:45Z",
  "reports": [
+  {
+   "date": "2026-11-28T12:41:45Z",
+   "titre": "J+9 midi : un projet se dit « jouable » à 21 i/s (non vérifié), classement PortWatch inchangé",
+   "statut": "partiel",
+   "resume": "Une nouveauté depuis 8 h 40 UTC. Le tracker GTA VI PC Race (relevé du 27/11 à 17 h 03 UTC) place en tête Vice-Tay, qui se dit « jouable » à 21,1 i/s médians sur 30 minutes. Ces chiffres viennent du projet seul et n'ont pas été vérifiés. PortWatch n'a publié aucun article le 28/11, et son flux de classement date toujours du 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 28/11 à 12 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. Selon Take-Two, l'annonce viendra de Rockstar « en temps voulu »."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux n'a pas changé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Sur GTA VI PC Race (27/11, 17 h 03 UTC), Vice-Tay se dit « jouable » à 21,1 i/s médians sur 30 minutes. Derrière, VIctory-RDNA tourne à 19–23 i/s en 4K et VI-BR-PORT à 27–29 i/s en 1080p, avec un plantage à 4 minutes. Tout est auto-déclaré. La seule démo vérifiée par PortWatch reste le multijoueur à 25–30 i/s (26/11, 22 h 42 UTC)."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 28/11 à 12 h 40 UTC. KytyPS5 et SharpEmu en restent à GTA V, qui affiche ses menus puis plante. AnyPS5 n'a montré aucune image de GTA VI."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouveau retrait depuis Belobug (27/11, 18 h 33 UTC), après Leonida et ses 3 007 forks (24/11). La build Xbox fuitée n'est toujours pas authentifiée. Tout « GTA VI PC » à télécharger ou à acheter est une arnaque, souvent porteuse de malwares."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "GTA VI PC Race – tracker of unofficial PC ports",
+     "url": "https://vuyp.github.io/gta6-pc-race/"
+    },
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – GitHub removes Belobug's GTA VI build over its Terms of Service",
+     "url": "https://portwatch-vi.xyz/news/2026-11-27-belobug-dmca"
+    }
+   ]
+  },
   {
    "date": "2026-11-28T08:42:11Z",
    "titre": "J+9 matin : foxhound annonce 30 i/s en conduite (auto-déclaré), classement PortWatch toujours figé",
