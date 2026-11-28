@@ -1,6 +1,57 @@
 {
- "maj": "2026-11-28T00:41:35Z",
+ "maj": "2026-11-28T04:41:25Z",
  "reports": [
+  {
+   "date": "2026-11-28T04:41:25Z",
+   "titre": "J+9 au petit matin : aucun nouveau palier, PortWatch silencieux depuis le 27/11 à 18 h 33 UTC",
+   "statut": "partiel",
+   "resume": "Rien de neuf depuis 0 h 40 UTC. Aucun article PortWatch n'est daté du 28/11 et le flux du classement date toujours du 24/11 à 7 h 34 UTC. Shattered.io (28/11, 0 h 55 UTC) dresse un bilan à J+5 après la fuite : aucune build n'est confirmée jouable.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 28/11 à 4 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. Selon Shattered.io, le « 1er trimestre 2027 » et l'ancienne rumeur de mars 2027 n'ont aucune source officielle."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux est inchangé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Aucune nouvelle démo vérifiée depuis le multijoueur à 25–30 i/s d'un fork privé, validé par PortWatch le 26/11 à 22 h 42 UTC. Le build AMD de Belobug, vu à environ 3 i/s le 25/11, a été retiré le 27/11. Les 22 i/s médians de ScarlettPort 0.5.3 restent auto-déclarés."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 28/11. KytyPS5 et SharpEmu en restent à GTA V : menus, puis plantages. AnyPS5 n'a affiché aucune image de GTA VI, malgré le post GitHub effacé du 27/11."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouveau retrait depuis celui de Belobug (27/11, 18 h 33 UTC), après Leonida et ses 3 007 forks (24/11). La build Xbox fuitée n'est toujours pas authentifiée. Rolling Out (27/11) rappelle que les faux « GTA VI PC » à télécharger sont des arnaques qui propagent des malwares."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "Shattered – GTA 6 PC Port: 5 Days After Leak, Playable Unconfirmed",
+     "url": "https://shattered.io/gta-6-pc-port-five-days-after-leak-playable-unconfirmed-nov-28/"
+    },
+    {
+     "titre": "Rolling Out – GTA 6 on PC before Rockstar? What gamers should know",
+     "url": "https://rollingout.com/2026/11/27/gta-6-unofficial-pc-port-risks-read-this/"
+    },
+    {
+     "titre": "PortWatch VI – Exclusive: GTA VI multiplayer is running on PC",
+     "url": "https://portwatch-vi.xyz/news/2026-11-26-multiplayer-running"
+    }
+   ]
+  },
   {
    "date": "2026-11-28T00:41:35Z",
    "titre": "J+9 nuit : GitHub vante puis efface un post sur AnyPS5, aucun nouveau palier de portage",
