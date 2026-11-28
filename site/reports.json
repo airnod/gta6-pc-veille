@@ -1,6 +1,53 @@
 {
- "maj": "2026-11-28T04:41:25Z",
+ "maj": "2026-11-28T08:42:11Z",
  "reports": [
+  {
+   "date": "2026-11-28T08:42:11Z",
+   "titre": "J+9 matin : foxhound annonce 30 i/s en conduite (auto-déclaré), classement PortWatch toujours figé",
+   "statut": "partiel",
+   "resume": "Une nouveauté depuis 4 h 40 UTC. MadRobot (28/11, 7 h 02 UTC) rapporte que foxhound a roulé 20 minutes à 30 i/s la plupart du temps, en 1440p sur RTX 4070 Super. Le chiffre vient du développeur et n'a pas été vérifié. Aucun article PortWatch n'est daté du 28/11, et le flux du classement date toujours du 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 28/11 à 8 h 40 UTC, Rockstar et Take-Two n'ont annoncé ni version PC, ni date, ni page Steam ou Epic. MadRobot (28/11) rappelle qu'une sortie PC en 2027 n'est pas confirmée."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux est inchangé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu. Sur la nouvelle échelle du site PortWatch, CGBJ atteignait 91,5 % le 26/11 (Notebookcheck)."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Selon MadRobot (28/11, 7 h 02 UTC), foxhound a tenu 20 minutes de conduite à 30 i/s la plupart du temps (16 à 21 i/s dans les scènes chargées). VIctory-NVIDIA annonce 26 à 30 i/s avec DLSS ou FSR 3. Ces chiffres sont auto-déclarés, mesurés chacun sur un seul PC. Le multijoueur à 25–30 i/s reste la dernière démo vérifiée par PortWatch (26/11, 22 h 42 UTC)."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Rien de neuf au 28/11 à 8 h 40 UTC. KytyPS5 et SharpEmu en restent à GTA V : menus, puis plantages. AnyPS5 n'a affiché aucune image de GTA VI."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouveau retrait depuis celui de Belobug (27/11, 18 h 33 UTC). Selon MadRobot, la famille VIctory utilise la même formule « vos propres fichiers » que Take-Two a qualifiée de « trompeuse » contre Leonida (24/11, 3 007 dépôts). La build fuitée n'est toujours pas authentifiée. Les installeurs « GTA VI PC », « repack » ou les « clés PC » payées en crypto sont des arnaques."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "MadRobot – GTA 6 on PC: the AI-built ports, the leaked files and Take-Two's takedowns, explained",
+     "url": "https://madrobot.blog/2026/11/28/gta-6-pc-port-ai-leaked-files-explained/"
+    },
+    {
+     "titre": "Notebookcheck – GTA 6 recomp hits 90% progress",
+     "url": "https://www.notebookcheck.net/GTA-6-recomp-hits-90-progress-and-here-s-what-that-means.1460623.0.html"
+    },
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    }
+   ]
+  },
   {
    "date": "2026-11-28T04:41:25Z",
    "titre": "J+9 au petit matin : aucun nouveau palier, PortWatch silencieux depuis le 27/11 à 18 h 33 UTC",
