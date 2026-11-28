@@ -1,6 +1,53 @@
 {
- "maj": "2026-11-27T20:41:39Z",
+ "maj": "2026-11-28T00:41:35Z",
  "reports": [
+  {
+   "date": "2026-11-28T00:41:35Z",
+   "titre": "J+9 nuit : GitHub vante puis efface un post sur AnyPS5, aucun nouveau palier de portage",
+   "statut": "partiel",
+   "resume": "Une nouveauté depuis 20 h 40 UTC. Windows Latest (27/11, 20 h 45 UTC) rapporte que GitHub a publié puis supprimé un post « GTA 6 is finally here » vantant l'outil PS5→PC AnyPS5, qui ne fait pas tourner GTA VI. Aucun article PortWatch le 28/11, et le classement reste figé au 24/11.",
+   "points": [
+    {
+     "categorie": "Version PC officielle",
+     "statut": "non",
+     "texte": "Au 28/11 à 0 h 40 UTC, ni Rockstar ni Take-Two n'ont annoncé de version PC, de date ou de page Steam ou Epic. Take-Two maintient sa stratégie « consoles d'abord », et le 1er trimestre 2027 évoqué par des initiés reste non confirmé."
+    },
+    {
+     "categorie": "Portages (classement PortWatch)",
+     "statut": "partiel",
+     "texte": "Le flux synchronisé n'a pas bougé depuis le 24/11 à 7 h 34 UTC. VIctory mène avec 67 % (« En jeu » à 0,8), devant XCL à 62,5 % (« En jeu » à 0,5) et Xbox2Windows à 47,5 % (« Menu principal » à 0,5). Leonida, « nuked », reste exclu."
+    },
+    {
+     "categorie": "Émulation Xbox Series",
+     "statut": "partiel",
+     "texte": "Aucune nouvelle démonstration vérifiée depuis le 26/11 à 22 h 42 UTC, quand PortWatch a validé la vidéo d'un fork privé en multijoueur à 25–30 i/s. Les 22 i/s médians de ScarlettPort 0.5.3 restent auto-déclarés."
+    },
+    {
+     "categorie": "Émulation PS5",
+     "statut": "non",
+     "texte": "Selon Windows Latest (27/11, 20 h 45 UTC), GitHub a mis en avant AnyPS5 (18 695 fonctions système PS5 réimplémentées), puis a supprimé son post sans explication. Un test de GTA VI n'a même pas passé l'étape de conversion : aucune image ni menu montré. KytyPS5 et SharpEmu en restent à GTA V."
+    },
+    {
+     "categorie": "Fuite, juridique & communauté",
+     "statut": "non",
+     "texte": "Aucun nouveau retrait depuis celui du build de Belobug (27/11, 18 h 33 UTC), après Leonida et ses 3 007 forks (24/11). La build Xbox fuitée n'est toujours pas authentifiée. Les faux « émulateurs PS5 » ou « GTA VI PC prêt à jouer » qui pullulent sont des arnaques, souvent porteuses de voleurs d'identifiants."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Windows Latest – Microsoft's GitHub hyped a tool that turns PS5 games into Windows 11 apps, then quietly deleted the post",
+     "url": "https://www.windowslatest.com/2026/11/28/gta-6-is-finally-here-microsofts-github-hyped-a-tool-that-turns-ps5-games-into-windows-11-apps-days-after-wiping-3007-gta-6-pc-port-repos-then-quietly-deleted-the-post/"
+    },
+    {
+     "titre": "PortWatch VI – GTA VI on PC news",
+     "url": "https://portwatch-vi.xyz/news/"
+    },
+    {
+     "titre": "PortWatch VI – Does GTA VI run on PC yet?",
+     "url": "https://portwatch-vi.xyz/"
+    }
+   ]
+  },
   {
    "date": "2026-11-27T20:41:39Z",
    "titre": "J+8 soir : GitHub retire le build de Belobug, ScarlettPort 0.5.3 annonce 22 i/s en jeu (auto-déclaré)",
